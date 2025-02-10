@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="NX4IO_SSEG_setSSEG_DATA"/>
+		<item key="selection" value="XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR"/>
+			<item value="PWM"/>
+			<item value="XPAR_PWM_ANALYZER"/>
+			<item value="NEXYS4IO_RGB2_CNTRL_OFFSET"/>
+			<item value="NEXYS4IO_RGB1_CNTRL_OFFSET"/>
+			<item value="NX4IO_RGBLED_setRGB_CNTRL"/>
+			<item value="NX4IO_RGBLED_setChnlEn"/>
+			<item value="Cycle"/>
+			<item value="SSEGLO_DATA"/>
+			<item value="NX4IO_RGBLED_setDutyCycle"/>
+			<item value="XTmrCtr_Enable"/>
+			<item value="XTmrCtr"/>
+			<item value="XT"/>
 			<item value="NX4IO_SSEG_setSSEG_DATA"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="826"/>
-		<item key="DIALOG_Y_ORIGIN" value="264"/>
-		<item key="DIALOG_WIDTH" value="284"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_X_ORIGIN" value="1647"/>
+		<item key="DIALOG_Y_ORIGIN" value="221"/>
+		<item key="DIALOG_WIDTH" value="385"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
 	</section>
 </section>

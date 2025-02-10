@@ -48,3 +48,5 @@ bsp config stdout "mdm_1"
 bsp write
 bsp reload
 catch {bsp regenerate}
+platform clean
+platform generate

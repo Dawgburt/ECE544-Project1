@@ -27,105 +27,105 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 66004
+INFO: [Synth 8-7075] Helper process launched with PID 41760
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1268.945 ; gain = 408.645
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1270.016 ; gain = 408.980
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'nexysa7fpga' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:7]
 INFO: [Synth 8-6157] synthesizing module 'embsys' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:12]
-INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_Analyzer_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_Analyzer_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_Analyzer_1_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_Analyzer_1_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_Analyzer_2_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_2_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_Analyzer_2_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_2_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_axi_timer_0_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'generateout1' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:396]
-WARNING: [Synth 8-7071] port 'pwm0' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:396]
-WARNING: [Synth 8-7071] port 'interrupt' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:396]
-WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'embsys_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:396]
-INFO: [Synth 8-6157] synthesizing module 'embsys_clk_wiz_1_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_clk_wiz_1_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_fit_timer_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_fit_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_fit_timer_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_fit_timer_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_mdm_1_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_mdm_1_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_mdm_1_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'Interrupt' of module 'embsys_mdm_1_0' is unconnected for instance 'mdm_1' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:430]
-WARNING: [Synth 8-7023] instance 'mdm_1' of module 'embsys_mdm_1_0' has 30 connections declared, but only 29 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:430]
-INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_microblaze_0_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_microblaze_0_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_intc_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_intc_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_periph_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:813]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_OEGTNN' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2091]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_OEGTNN' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2091]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1X988FM' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2223]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1X988FM' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2223]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1LSUSSG' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2355]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1LSUSSG' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2355]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_Z0V64X' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2487]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_Z0V64X' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2487]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_10K59R8' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2619]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_10K59R8' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2619]
-INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_CO79RP' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2765]
-INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_CO79RP' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2765]
-INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_17TSQV' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2911]
-INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_17TSQV' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2911]
-INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1B6JKGM' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3057]
-INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1B6JKGM' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3057]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_QRRRG2' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3437]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_QRRRG2' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3437]
-INFO: [Synth 8-6157] synthesizing module 'embsys_xbar_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_xbar_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_periph_0' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:813]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3203]
-INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_bram_if_cntlr_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_dlmb_bram_if_cntlr_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_bram_if_cntlr_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_dlmb_bram_if_cntlr_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_v10_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_dlmb_v10_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_v10_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_dlmb_v10_1_stub.v:5]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_dlmb_v10_1' is unconnected for instance 'dlmb_v10' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3349]
-WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'embsys_dlmb_v10_1' has 25 connections declared, but only 24 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3349]
-INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_bram_if_cntlr_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_ilmb_bram_if_cntlr_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_bram_if_cntlr_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_ilmb_bram_if_cntlr_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_v10_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_ilmb_v10_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_v10_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_ilmb_v10_1_stub.v:5]
-WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_ilmb_v10_1' is unconnected for instance 'ilmb_v10' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3395]
-WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'embsys_ilmb_v10_1' has 25 connections declared, but only 24 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3395]
-INFO: [Synth 8-6157] synthesizing module 'embsys_lmb_bram_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_lmb_bram_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_lmb_bram_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_lmb_bram_1_stub.v:5]
-WARNING: [Synth 8-7071] port 'rsta_busy' of module 'embsys_lmb_bram_1' is unconnected for instance 'lmb_bram' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3420]
-WARNING: [Synth 8-7071] port 'rstb_busy' of module 'embsys_lmb_bram_1' is unconnected for instance 'lmb_bram' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3420]
-WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'embsys_lmb_bram_1' has 16 connections declared, but only 14 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3420]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3203]
+INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_Analyzer_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_Analyzer_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_Analyzer_1_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_Analyzer_1_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_PWM_Analyzer_2_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_2_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_PWM_Analyzer_2_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_PWM_Analyzer_2_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_gpio_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_gpio_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_axi_timer_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_axi_timer_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:408]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:408]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'embsys_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:408]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'embsys_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:408]
+INFO: [Synth 8-6157] synthesizing module 'embsys_clk_wiz_1_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_clk_wiz_1_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_fit_timer_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_fit_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_fit_timer_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_fit_timer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_mdm_1_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_mdm_1_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_mdm_1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'Interrupt' of module 'embsys_mdm_1_0' is unconnected for instance 'mdm_1' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:442]
+WARNING: [Synth 8-7023] instance 'mdm_1' of module 'embsys_mdm_1_0' has 30 connections declared, but only 29 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:442]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_intc_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_intc_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_axi_periph_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:828]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_OEGTNN' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2106]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_OEGTNN' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2106]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1X988FM' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2238]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1X988FM' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2238]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1LSUSSG' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1LSUSSG' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2370]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_Z0V64X' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2502]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_Z0V64X' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2502]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_10K59R8' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2634]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_10K59R8' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2634]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_CO79RP' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2780]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_CO79RP' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2780]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_17TSQV' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2926]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_17TSQV' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:2926]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1B6JKGM' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3072]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1B6JKGM' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3072]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_QRRRG2' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3452]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_QRRRG2' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3452]
+INFO: [Synth 8-6157] synthesizing module 'embsys_xbar_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_xbar_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_axi_periph_0' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:828]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3218]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_bram_if_cntlr_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_dlmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_bram_if_cntlr_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_dlmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_dlmb_v10_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_dlmb_v10_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_dlmb_v10_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_dlmb_v10_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_dlmb_v10_1' is unconnected for instance 'dlmb_v10' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3364]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'embsys_dlmb_v10_1' has 25 connections declared, but only 24 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3364]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_bram_if_cntlr_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_ilmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_bram_if_cntlr_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_ilmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_ilmb_v10_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_ilmb_v10_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_ilmb_v10_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_ilmb_v10_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'embsys_ilmb_v10_1' is unconnected for instance 'ilmb_v10' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3410]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'embsys_ilmb_v10_1' has 25 connections declared, but only 24 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3410]
+INFO: [Synth 8-6157] synthesizing module 'embsys_lmb_bram_1' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_lmb_bram_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_lmb_bram_1' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_lmb_bram_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'embsys_lmb_bram_1' is unconnected for instance 'lmb_bram' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3435]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'embsys_lmb_bram_1' is unconnected for instance 'lmb_bram' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3435]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'embsys_lmb_bram_1' has 16 connections declared, but only 14 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3435]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1SR2TDT' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:3218]
 INFO: [Synth 8-6157] synthesizing module 'embsys_microblaze_0_xlconcat_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_xlconcat_0/synth/embsys_microblaze_0_xlconcat_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'embsys_microblaze_0_xlconcat_0' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_xlconcat_0/synth/embsys_microblaze_0_xlconcat_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'embsys_nexys4io_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_nexys4io_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_nexys4io_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_nexys4io_0_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'RGB1_Red' of module 'embsys_nexys4io_0_0' is unconnected for instance 'nexys4io_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:750]
-WARNING: [Synth 8-7071] port 'RGB1_Green' of module 'embsys_nexys4io_0_0' is unconnected for instance 'nexys4io_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:750]
-WARNING: [Synth 8-7071] port 'RGB1_Blue' of module 'embsys_nexys4io_0_0' is unconnected for instance 'nexys4io_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:750]
-WARNING: [Synth 8-7023] instance 'nexys4io_0' of module 'embsys_nexys4io_0_0' has 38 connections declared, but only 35 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:750]
-INFO: [Synth 8-6157] synthesizing module 'embsys_proc_sys_reset_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_proc_sys_reset_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_proc_sys_reset_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_proc_sys_reset_0_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:786]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:786]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:786]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:786]
-WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'embsys_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:786]
-INFO: [Synth 8-6157] synthesizing module 'embsys_rgbPWM_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_rgbPWM_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_rgbPWM_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_rgbPWM_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'embsys_rst_clk_wiz_1_100M_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-66388-Dawgburts-Mothership/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'embsys_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:801]
-WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'embsys_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 9 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:801]
+INFO: [Synth 8-6157] synthesizing module 'embsys_nexys4io_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_nexys4io_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_nexys4io_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_nexys4io_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_proc_sys_reset_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_proc_sys_reset_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_proc_sys_reset_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_proc_sys_reset_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:801]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:801]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:801]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'embsys_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:801]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'embsys_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:801]
+INFO: [Synth 8-6157] synthesizing module 'embsys_rgbPWM_0_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_rgbPWM_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_rgbPWM_0_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_rgbPWM_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'embsys_rst_clk_wiz_1_100M_0' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'embsys_rst_clk_wiz_1_100M_0' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/.Xil/Vivado-37736-Dawgburts-Mothership/realtime/embsys_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'embsys_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:816]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'embsys_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 9 given [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:816]
 INFO: [Synth 8-6155] done synthesizing module 'embsys' (0#1) [c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/synth/embsys.v:12]
 WARNING: [Synth 8-689] width (32) of port connection 'gpio_rtl_0_tri_i' does not match port width (16) of module 'embsys' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:32]
+WARNING: [Synth 8-7071] port 'RGB1_Blue_0' of module 'embsys' is unconnected for instance 'embsys_i' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:31]
+WARNING: [Synth 8-7071] port 'RGB1_Green_0' of module 'embsys' is unconnected for instance 'embsys_i' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:31]
+WARNING: [Synth 8-7071] port 'RGB1_Red_0' of module 'embsys' is unconnected for instance 'embsys_i' [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:31]
+WARNING: [Synth 8-7023] instance 'embsys_i' of module 'embsys' has 24 connections declared, but only 21 given [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:31]
 INFO: [Synth 8-6155] done synthesizing module 'nexysa7fpga' (0#1) [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:7]
 WARNING: [Synth 8-3848] Net gpio_rtl_tri_o in module/entity nexysa7fpga does not have driver. [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/hdl/nexysa7fpga.sv:25]
 WARNING: [Synth 8-7129] Port In1[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -230,18 +230,18 @@ WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is eithe
 WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1370.668 ; gain = 509.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1370.668 ; gain = 509.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1370.668 ; gain = 509.633
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1370.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1370.668 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -294,24 +294,24 @@ Parsing XDC File [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/
 Finished Parsing XDC File [C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1370.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1374.363 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1370.867 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1374.363 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'embsys_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.008 ; gain = 515.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.008 ; gain = 515.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -342,10 +342,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for embsys_i/microblaze_0_local_memor
 Applied set_property KEEP_HIERARCHY = SOFT for embsys_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for embsys_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.008 ; gain = 515.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1377.008 ; gain = 515.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -368,25 +368,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1377.008 ; gain = 515.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1382.410 ; gain = 521.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1382.410 ; gain = 521.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1370.867 ; gain = 510.566
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -404,37 +404,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -494,24 +494,24 @@ Report Cell Usage:
 |22    |OBUF                         |    38|
 +------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1372.090 ; gain = 511.789
-Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1372.090 ; gain = 511.789
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1386.746 ; gain = 519.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1386.746 ; gain = 525.711
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1384.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1398.629 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1394.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1402.281 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 67d79d7f
+Synth Design complete, checksum: b8f7dcca
 INFO: [Common 17-83] Releasing license: Synthesis
 95 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1394.090 ; gain = 932.293
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1402.281 ; gain = 941.434
 INFO: [Common 17-1381] The checkpoint 'C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.runs/synth_1/nexysa7fpga.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nexysa7fpga_utilization_synth.rpt -pb nexysa7fpga_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Feb  2 15:32:55 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 11:49:05 2025...

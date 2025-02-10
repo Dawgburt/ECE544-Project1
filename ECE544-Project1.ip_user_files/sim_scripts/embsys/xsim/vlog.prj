@@ -1,5 +1,4 @@
 verilog xil_defaultlib --include "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/ec67/hdl" --include "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/7698" --include "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ip/embsys_nexys4io_0_0/drivers/nexys4io_v1_0/src" \
-"../../../bd/embsys/ip/embsys_lmb_bram_0/sim/embsys_lmb_bram_0.v" \
 "../../../bd/embsys/ip/embsys_xbar_0/sim/embsys_xbar_0.v" \
 "../../../bd/embsys/ip/embsys_microblaze_0_xlconcat_0/sim/embsys_microblaze_0_xlconcat_0.v" \
 "../../../bd/embsys/ip/embsys_clk_wiz_1_0/embsys_clk_wiz_1_0_clk_wiz.v" \
@@ -17,8 +16,8 @@ verilog xil_defaultlib --include "../../../../ECE544-Project1.gen/sources_1/bd/e
 "../../../bd/embsys/ip/embsys_PWM_Analyzer_1_0/sim/embsys_PWM_Analyzer_1_0.v" \
 "../../../bd/embsys/ip/embsys_PWM_Analyzer_2_0/sim/embsys_PWM_Analyzer_2_0.v" \
 "../../../bd/embsys/ip/embsys_rgbPWM_0_0/sim/embsys_rgbPWM_0_0.v" \
+"../../../bd/embsys/ip/embsys_lmb_bram_1/sim/embsys_lmb_bram_1.v" \
 "../../../bd/embsys/sim/embsys.v" \
-"../../../bd/embsys/ip/embsys_s00_mmu_0/sim/embsys_s00_mmu_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 

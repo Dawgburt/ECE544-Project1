@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Sun Feb  2 15:31:32 2025
+//Date        : Mon Feb 10 10:39:39 2025
 //Host        : Dawgburts-Mothership running 64-bit major release  (build 9200)
 //Command     : generate_target embsys_wrapper.bd
 //Design      : embsys_wrapper
@@ -10,7 +10,10 @@
 `timescale 1 ps / 1 ps
 
 module embsys_wrapper
-   (RGB2_Blue_0,
+   (RGB1_Blue_0,
+    RGB1_Green_0,
+    RGB1_Red_0,
+    RGB2_Blue_0,
     RGB2_Green_0,
     RGB2_Red_0,
     an_0,
@@ -31,6 +34,9 @@ module embsys_wrapper
     rgbRED_0,
     seg_0,
     sw_0);
+  output RGB1_Blue_0;
+  output RGB1_Green_0;
+  output RGB1_Red_0;
   output RGB2_Blue_0;
   output RGB2_Green_0;
   output RGB2_Red_0;
@@ -53,6 +59,9 @@ module embsys_wrapper
   output [6:0]seg_0;
   input [15:0]sw_0;
 
+  wire RGB1_Blue_0;
+  wire RGB1_Green_0;
+  wire RGB1_Red_0;
   wire RGB2_Blue_0;
   wire RGB2_Green_0;
   wire RGB2_Red_0;
@@ -76,7 +85,10 @@ module embsys_wrapper
   wire [15:0]sw_0;
 
   embsys embsys_i
-       (.RGB2_Blue_0(RGB2_Blue_0),
+       (.RGB1_Blue_0(RGB1_Blue_0),
+        .RGB1_Green_0(RGB1_Green_0),
+        .RGB1_Red_0(RGB1_Red_0),
+        .RGB2_Blue_0(RGB2_Blue_0),
         .RGB2_Green_0(RGB2_Green_0),
         .RGB2_Red_0(RGB2_Red_0),
         .an_0(an_0),

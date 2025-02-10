@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 -- Date        : Sun Feb  2 13:44:05 2025
 -- Host        : Dawgburts-Mothership running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/ip/embsys_mdm_1_0/embsys_mdm_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top embsys_mdm_1_0 -prefix
+--               embsys_mdm_1_0_ embsys_mdm_1_0_sim_netlist.vhdl
 -- Design      : embsys_mdm_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -29,8 +29,6 @@ entity embsys_mdm_1_0_MB_BSCANE2 is
     \Use_Dbg_Reg_Access.update_set\ : in STD_LOGIC;
     jtag_busy : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_BSCANE2 : entity is "MB_BSCANE2";
 end embsys_mdm_1_0_MB_BSCANE2;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_BSCANE2 is
@@ -106,8 +104,6 @@ entity embsys_mdm_1_0_MB_BUFGCTRL is
     S0 : in STD_LOGIC;
     dbgreg_select : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_BUFGCTRL : entity is "MB_BUFGCTRL";
 end embsys_mdm_1_0_MB_BUFGCTRL;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_BUFGCTRL is
@@ -294,8 +290,6 @@ entity embsys_mdm_1_0_MB_FDC_1 is
     \Use_Serial_Unified_Completion.completion_status_reg[6]\ : in STD_LOGIC;
     \Use_Serial_Unified_Completion.Write_Instr_Status.count_reg[0]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_FDC_1 : entity is "MB_FDC_1";
 end embsys_mdm_1_0_MB_FDC_1;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_FDC_1 is
@@ -1023,8 +1017,6 @@ entity embsys_mdm_1_0_MB_FDRE is
     tx_Buffer_Empty : in STD_LOGIC;
     S_AXI_ACLK : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_FDRE : entity is "MB_FDRE";
 end embsys_mdm_1_0_MB_FDRE;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_FDRE is
@@ -1063,8 +1055,6 @@ entity embsys_mdm_1_0_MB_FDRE_1 is
     \Use_Serial_Unified_Completion.mb_instr_overrun_reg_0\ : in STD_LOGIC;
     \Use_Serial_Unified_Completion.mb_instr_overrun_reg_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_FDRE_1 : entity is "MB_FDRE_1";
 end embsys_mdm_1_0_MB_FDRE_1;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_FDRE_1 is
@@ -1676,8 +1666,6 @@ entity embsys_mdm_1_0_MB_LUT1 is
     O : out STD_LOGIC;
     I0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_LUT1 : entity is "MB_LUT1";
 end embsys_mdm_1_0_MB_LUT1;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_LUT1 is
@@ -1719,8 +1707,6 @@ entity embsys_mdm_1_0_MB_MUXCY_XORCY is
     lopt_8 : out STD_LOGIC;
     lopt_9 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_MUXCY_XORCY : entity is "MB_MUXCY_XORCY";
 end embsys_mdm_1_0_MB_MUXCY_XORCY;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_MUXCY_XORCY is
@@ -1978,8 +1964,6 @@ entity embsys_mdm_1_0_MB_SRL16E is
     A3 : in STD_LOGIC;
     \Use_unisim.MB_SRL16E_I1_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_SRL16E : entity is "MB_SRL16E";
 end embsys_mdm_1_0_MB_SRL16E;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_SRL16E is
@@ -3668,8 +3652,6 @@ entity embsys_mdm_1_0_MB_XORCY is
     LO : in STD_LOGIC;
     lopt : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MB_XORCY : entity is "MB_XORCY";
 end embsys_mdm_1_0_MB_XORCY;
 
 architecture STRUCTURE of embsys_mdm_1_0_MB_XORCY is
@@ -3708,8 +3690,6 @@ entity embsys_mdm_1_0_pselect_f is
     ce_expnd_i_7 : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_pselect_f : entity is "pselect_f";
 end embsys_mdm_1_0_pselect_f;
 
 architecture STRUCTURE of embsys_mdm_1_0_pselect_f is
@@ -3872,8 +3852,6 @@ entity embsys_mdm_1_0_SRL_FIFO is
     Bus_RNW_reg : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_SRL_FIFO : entity is "SRL_FIFO";
 end embsys_mdm_1_0_SRL_FIFO;
 
 architecture STRUCTURE of embsys_mdm_1_0_SRL_FIFO is
@@ -4514,8 +4492,6 @@ entity embsys_mdm_1_0_address_decoder is
     bus2ip_rnw_i : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[6].ce_out_i_reg[6]_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_address_decoder : entity is "address_decoder";
 end embsys_mdm_1_0_address_decoder;
 
 architecture STRUCTURE of embsys_mdm_1_0_address_decoder is
@@ -5239,8 +5215,6 @@ entity embsys_mdm_1_0_JTAG_CONTROL is
     \Use_Dbg_Reg_Access.reg_data_reg[0]_3\ : in STD_LOGIC;
     \Use_Dbg_Reg_Access.reg_data_reg[0]_4\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_JTAG_CONTROL : entity is "JTAG_CONTROL";
 end embsys_mdm_1_0_JTAG_CONTROL;
 
 architecture STRUCTURE of embsys_mdm_1_0_JTAG_CONTROL is
@@ -7586,8 +7560,6 @@ entity embsys_mdm_1_0_slave_attachment is
     S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 2 downto 0 );
     D : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_slave_attachment : entity is "slave_attachment";
 end embsys_mdm_1_0_slave_attachment;
 
 architecture STRUCTURE of embsys_mdm_1_0_slave_attachment is
@@ -8344,8 +8316,6 @@ entity embsys_mdm_1_0_MDM_Core is
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg\ : in STD_LOGIC;
     AR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MDM_Core : entity is "MDM_Core";
 end embsys_mdm_1_0_MDM_Core;
 
 architecture STRUCTURE of embsys_mdm_1_0_MDM_Core is
@@ -12906,8 +12876,6 @@ entity embsys_mdm_1_0_axi_lite_ipif is
     S_AXI_AWADDR : in STD_LOGIC_VECTOR ( 2 downto 0 );
     D : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end embsys_mdm_1_0_axi_lite_ipif;
 
 architecture STRUCTURE of embsys_mdm_1_0_axi_lite_ipif is
@@ -14565,8 +14533,6 @@ entity embsys_mdm_1_0_MDM is
   attribute C_USE_CROSS_TRIGGER of embsys_mdm_1_0_MDM : entity is 0;
   attribute C_USE_UART : integer;
   attribute C_USE_UART of embsys_mdm_1_0_MDM : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of embsys_mdm_1_0_MDM : entity is "MDM";
   attribute bscan_debug_core : string;
   attribute bscan_debug_core of embsys_mdm_1_0_MDM : entity is "FALSE";
   attribute dont_touch : string;

@@ -5,32 +5,6 @@
 -makelib xcelium_lib/xpm \
   "C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
--makelib xcelium_lib/microblaze_v11_0_10 \
-  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/1f7b/hdl/microblaze_v11_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/embsys/ip/embsys_microblaze_0_0/sim/embsys_microblaze_0_0.vhd" \
--endlib
--makelib xcelium_lib/lmb_v10_v3_0_12 \
-  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/cd1d/hdl/lmb_v10_v3_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/embsys/ip/embsys_dlmb_v10_0/sim/embsys_dlmb_v10_0.vhd" \
-  "../../../bd/embsys/ip/embsys_ilmb_v10_0/sim/embsys_ilmb_v10_0.vhd" \
--endlib
--makelib xcelium_lib/lmb_bram_if_cntlr_v4_0_21 \
-  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/embsys/ip/embsys_dlmb_bram_if_cntlr_0/sim/embsys_dlmb_bram_if_cntlr_0.vhd" \
-  "../../../bd/embsys/ip/embsys_ilmb_bram_if_cntlr_0/sim/embsys_ilmb_bram_if_cntlr_0.vhd" \
--endlib
--makelib xcelium_lib/blk_mem_gen_v8_4_5 \
-  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/25a8/simulation/blk_mem_gen_v8_4.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/embsys/ip/embsys_lmb_bram_0/sim/embsys_lmb_bram_0.v" \
--endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
   "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 -endlib
@@ -134,14 +108,32 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/embsys/ip/embsys_proc_sys_reset_0_0/sim/embsys_proc_sys_reset_0_0.vhd" \
 -endlib
+-makelib xcelium_lib/microblaze_v11_0_10 \
+  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/1f7b/hdl/microblaze_v11_0_vh_rfs.vhd" \
+-endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_microblaze_0_1/sim/embsys_microblaze_0_1.vhd" \
+-endlib
+-makelib xcelium_lib/lmb_v10_v3_0_12 \
+  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/cd1d/hdl/lmb_v10_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_dlmb_v10_1/sim/embsys_dlmb_v10_1.vhd" \
+  "../../../bd/embsys/ip/embsys_ilmb_v10_1/sim/embsys_ilmb_v10_1.vhd" \
+-endlib
+-makelib xcelium_lib/lmb_bram_if_cntlr_v4_0_21 \
+  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/a177/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_dlmb_bram_if_cntlr_1/sim/embsys_dlmb_bram_if_cntlr_1.vhd" \
+  "../../../bd/embsys/ip/embsys_ilmb_bram_if_cntlr_1/sim/embsys_ilmb_bram_if_cntlr_1.vhd" \
+-endlib
+-makelib xcelium_lib/blk_mem_gen_v8_4_5 \
+  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/25a8/simulation/blk_mem_gen_v8_4.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/embsys/ip/embsys_lmb_bram_1/sim/embsys_lmb_bram_1.v" \
   "../../../bd/embsys/sim/embsys.v" \
--endlib
--makelib xcelium_lib/axi_mmu_v2_1_25 \
-  "../../../../ECE544-Project1.gen/sources_1/bd/embsys/ipshared/182d/hdl/axi_mmu_v2_1_vl_rfs.v" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/embsys/ip/embsys_s00_mmu_0/sim/embsys_s00_mmu_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

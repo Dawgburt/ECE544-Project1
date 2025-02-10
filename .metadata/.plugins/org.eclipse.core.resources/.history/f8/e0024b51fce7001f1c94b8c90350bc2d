@@ -1,0 +1,111 @@
+/**
+ * @file test_nexys4io.c
+ *
+ * @brief Test program for Nexys4IO peripheral, implementing:
+ *        - Switch input to 16 green LEDs
+ *        - Pushbuttons to control RGB1 LED duty cycles
+ *        - PWM duty cycle measurement and display on 7-segment display
+ *        - RGB2 LED driven by PWM Analyzer duty cycle readings
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "microblaze_sleep.h"
+#include "xtmrctr.h"
+#include "xintc.h"
+#include "nexys4IO.h"
+#include "PWM_Analyzer.h"
+
+// Peripheral constants
+#define PWM_ANALYZER_BASEADDR  XPAR_PWM_ANALYZER_0_BASEADDR
+#define CPU_CLOCK_FREQ_HZ      XPAR_CPU_CORE_CLOCK_FREQ_HZ
+
+// AXI timer parameters
+#define N4IO_PWM_CLK_DEVICE_ID XPAR_TMRCTR_0_DEVICE_ID
+#define N4IO_PWM_CLK_TIMER_NUM 0
+#define N4IO_PWM_CLK_TIMER_VAL 1998
+
+// Interrupt Controller
+#define INTC_DEVICE_ID         XPAR_INTC_0_DEVICE_ID
+#define FIT_INTR_NUM           XPAR_MICROBLAZE_0_AXI_INTC_FIT_TIMER_0_INTERRUPT_INTR
+
+// Button and Switch Variables
+volatile uint16_t sw = 0;
+volatile uint8_t btns = 0;
+volatile bool newbtnsSw = false;
+
+// Timer and Interrupt Instances
+XTmrCtr N4IO_TimerInst;
+XIntc INTC_Inst;
+
+void FIT_Handler(void);
+int do_init(void);
+void update_rgb1_pwm(void);
+void display_pwm_info(void);
+
+int main() {
+    xil_printf("Starting Nexys4IO Test Application\r\n");
+    init_platform();
+    if (do_init() != XST_SUCCESS) {
+        xil_printf("System initialization failed\r\n");
+        return 1;
+    }
+    microblaze_enable_interrupts();
+
+    while (1) {
+        if (newbtnsSw) {
+            NX4IO_setLEDs(sw);
+            update_rgb1_pwm();
+            display_pwm_info();
+            newbtnsSw = false;
+        }
+    }
+
+    cleanup_platform();
+    return 0;
+}
+
+void FIT_Handler(void) {
+    static uint16_t prevSw = 0xFFFF;
+    static uint8_t prevBtns = 0x0F;
+
+    sw = NX4IO_getSwitches();
+    btns = NX4IO_getBtns();
+    if (sw != prevSw || btns != prevBtns) {
+        newbtnsSw = true;
+        prevSw = sw;
+        prevBtns = btns;
+    }
+}
+
+void update_rgb1_pwm() {
+    uint8_t redDC = (btns & 0x01) ? 128 : 0;
+    uint8_t greenDC = (btns & 0x02) ? 128 : 0;
+    uint8_t blueDC = (btns & 0x04) ? 128 : 0;
+    NX4IO_RGBLED_setDutyCycle(RGB1, redDC, greenDC, blueDC);
+}
+
+void display_pwm_info() {
+    uint32_t redDC = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_BASEADDR);
+    uint32_t greenDC = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_BASEADDR + 4);
+    uint32_t blueDC = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_BASEADDR + 8);
+    NX4IO_SSEG_putU16Hex(SSEGHI, redDC);
+    NX4IO_SSEG_putU16Hex(SSEGLO, greenDC);
+    NX4IO_SSEG_putU16Hex(SSEGLO, blueDC);
+    NX4IO_RGBLED_setDutyCycle(RGB2, redDC, greenDC, blueDC);
+}
+
+int do_init(void) {
+    if (XTmrCtr_Initialize(&N4IO_TimerInst, N4IO_PWM_CLK_DEVICE_ID) != XST_SUCCESS)
+        return XST_FAILURE;
+    if (XIntc_Initialize(&INTC_Inst, INTC_DEVICE_ID) != XST_SUCCESS)
+        return XST_FAILURE;
+    if (XIntc_Connect(&INTC_Inst, FIT_INTR_NUM, (XInterruptHandler)FIT_Handler, (void *)0) != XST_SUCCESS)
+        return XST_FAILURE;
+    XIntc_Enable(&INTC_Inst, FIT_INTR_NUM);
+    return XST_SUCCESS;
+}

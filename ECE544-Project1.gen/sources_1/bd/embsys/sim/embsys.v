@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Sun Feb  2 15:31:32 2025
+//Date        : Mon Feb 10 10:39:39 2025
 //Host        : Dawgburts-Mothership running 64-bit major release  (build 9200)
 //Command     : generate_target embsys.bd
 //Design      : embsys
@@ -11,7 +11,10 @@
 
 (* CORE_GENERATION_INFO = "embsys,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=embsys,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=21,numNonXlnxBlks=4,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=6,da_clkrst_cnt=2,da_mb_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "embsys.hwdef" *) 
 module embsys
-   (RGB2_Blue_0,
+   (RGB1_Blue_0,
+    RGB1_Green_0,
+    RGB1_Red_0,
+    RGB2_Blue_0,
     RGB2_Green_0,
     RGB2_Red_0,
     an_0,
@@ -32,6 +35,9 @@ module embsys
     rgbRED_0,
     seg_0,
     sw_0);
+  output RGB1_Blue_0;
+  output RGB1_Green_0;
+  output RGB1_Red_0;
   output RGB2_Blue_0;
   output RGB2_Green_0;
   output RGB2_Red_0;
@@ -45,7 +51,7 @@ module embsys
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN embsys_sys_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk_100MHz;
   input [31:0]controlReg_0;
   output dp_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_rtl_0 " *) input [15:0]gpio_rtl_0_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_rtl_0 TRI_I" *) input [15:0]gpio_rtl_0_tri_i;
   output [15:0]led_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input resetn;
   output rgbBLUE_0;
@@ -70,21 +76,21 @@ module embsys
   wire microblaze_0_Clk;
   wire [31:0]microblaze_0_axi_dp_ARADDR;
   wire [2:0]microblaze_0_axi_dp_ARPROT;
-  wire [0:0]microblaze_0_axi_dp_ARREADY;
+  wire microblaze_0_axi_dp_ARREADY;
   wire microblaze_0_axi_dp_ARVALID;
   wire [31:0]microblaze_0_axi_dp_AWADDR;
   wire [2:0]microblaze_0_axi_dp_AWPROT;
-  wire [0:0]microblaze_0_axi_dp_AWREADY;
+  wire microblaze_0_axi_dp_AWREADY;
   wire microblaze_0_axi_dp_AWVALID;
   wire microblaze_0_axi_dp_BREADY;
   wire [1:0]microblaze_0_axi_dp_BRESP;
-  wire [0:0]microblaze_0_axi_dp_BVALID;
+  wire microblaze_0_axi_dp_BVALID;
   wire [31:0]microblaze_0_axi_dp_RDATA;
   wire microblaze_0_axi_dp_RREADY;
   wire [1:0]microblaze_0_axi_dp_RRESP;
-  wire [0:0]microblaze_0_axi_dp_RVALID;
+  wire microblaze_0_axi_dp_RVALID;
   wire [31:0]microblaze_0_axi_dp_WDATA;
-  wire [0:0]microblaze_0_axi_dp_WREADY;
+  wire microblaze_0_axi_dp_WREADY;
   wire [3:0]microblaze_0_axi_dp_WSTRB;
   wire microblaze_0_axi_dp_WVALID;
   wire [31:0]microblaze_0_axi_periph_M01_AXI_ARADDR;
@@ -263,6 +269,9 @@ module embsys
   wire [31:0]microblaze_0_interrupt_ADDRESS;
   wire microblaze_0_interrupt_INTERRUPT;
   wire [0:0]microblaze_0_intr;
+  wire nexys4io_0_RGB1_Blue;
+  wire nexys4io_0_RGB1_Green;
+  wire nexys4io_0_RGB1_Red;
   wire nexys4io_0_RGB2_Blue;
   wire nexys4io_0_RGB2_Green;
   wire nexys4io_0_RGB2_Red;
@@ -283,6 +292,9 @@ module embsys
   wire sys_clock_1;
 
   assign Net = resetn;
+  assign RGB1_Blue_0 = nexys4io_0_RGB1_Blue;
+  assign RGB1_Green_0 = nexys4io_0_RGB1_Green;
+  assign RGB1_Red_0 = nexys4io_0_RGB1_Red;
   assign RGB2_Blue_0 = nexys4io_0_RGB2_Blue;
   assign RGB2_Green_0 = nexys4io_0_RGB2_Green;
   assign RGB2_Red_0 = nexys4io_0_RGB2_Red;
@@ -748,7 +760,10 @@ module embsys
        (.In0(fit_timer_0_Interrupt),
         .dout(microblaze_0_intr));
   embsys_nexys4io_0_0 nexys4io_0
-       (.RGB2_Blue(nexys4io_0_RGB2_Blue),
+       (.RGB1_Blue(nexys4io_0_RGB1_Blue),
+        .RGB1_Green(nexys4io_0_RGB1_Green),
+        .RGB1_Red(nexys4io_0_RGB1_Red),
+        .RGB2_Blue(nexys4io_0_RGB2_Blue),
         .RGB2_Green(nexys4io_0_RGB2_Green),
         .RGB2_Red(nexys4io_0_RGB2_Red),
         .RGBLED_Clock(axi_timer_0_generateout0),
@@ -1160,23 +1175,23 @@ module embsys_microblaze_0_axi_periph_0
   input S00_ARESETN;
   input [31:0]S00_AXI_araddr;
   input [2:0]S00_AXI_arprot;
-  output [0:0]S00_AXI_arready;
-  input [0:0]S00_AXI_arvalid;
+  output S00_AXI_arready;
+  input S00_AXI_arvalid;
   input [31:0]S00_AXI_awaddr;
   input [2:0]S00_AXI_awprot;
-  output [0:0]S00_AXI_awready;
-  input [0:0]S00_AXI_awvalid;
-  input [0:0]S00_AXI_bready;
+  output S00_AXI_awready;
+  input S00_AXI_awvalid;
+  input S00_AXI_bready;
   output [1:0]S00_AXI_bresp;
-  output [0:0]S00_AXI_bvalid;
+  output S00_AXI_bvalid;
   output [31:0]S00_AXI_rdata;
-  input [0:0]S00_AXI_rready;
+  input S00_AXI_rready;
   output [1:0]S00_AXI_rresp;
-  output [0:0]S00_AXI_rvalid;
+  output S00_AXI_rvalid;
   input [31:0]S00_AXI_wdata;
-  output [0:0]S00_AXI_wready;
+  output S00_AXI_wready;
   input [3:0]S00_AXI_wstrb;
-  input [0:0]S00_AXI_wvalid;
+  input S00_AXI_wvalid;
 
   wire [31:0]m00_couplers_to_microblaze_0_axi_periph_ARADDR;
   wire m00_couplers_to_microblaze_0_axi_periph_ARREADY;
@@ -1327,22 +1342,22 @@ module embsys_microblaze_0_axi_periph_0
   wire [31:0]microblaze_0_axi_periph_to_s00_couplers_ARADDR;
   wire [2:0]microblaze_0_axi_periph_to_s00_couplers_ARPROT;
   wire microblaze_0_axi_periph_to_s00_couplers_ARREADY;
-  wire [0:0]microblaze_0_axi_periph_to_s00_couplers_ARVALID;
+  wire microblaze_0_axi_periph_to_s00_couplers_ARVALID;
   wire [31:0]microblaze_0_axi_periph_to_s00_couplers_AWADDR;
   wire [2:0]microblaze_0_axi_periph_to_s00_couplers_AWPROT;
   wire microblaze_0_axi_periph_to_s00_couplers_AWREADY;
-  wire [0:0]microblaze_0_axi_periph_to_s00_couplers_AWVALID;
-  wire [0:0]microblaze_0_axi_periph_to_s00_couplers_BREADY;
+  wire microblaze_0_axi_periph_to_s00_couplers_AWVALID;
+  wire microblaze_0_axi_periph_to_s00_couplers_BREADY;
   wire [1:0]microblaze_0_axi_periph_to_s00_couplers_BRESP;
   wire microblaze_0_axi_periph_to_s00_couplers_BVALID;
   wire [31:0]microblaze_0_axi_periph_to_s00_couplers_RDATA;
-  wire [0:0]microblaze_0_axi_periph_to_s00_couplers_RREADY;
+  wire microblaze_0_axi_periph_to_s00_couplers_RREADY;
   wire [1:0]microblaze_0_axi_periph_to_s00_couplers_RRESP;
   wire microblaze_0_axi_periph_to_s00_couplers_RVALID;
   wire [31:0]microblaze_0_axi_periph_to_s00_couplers_WDATA;
   wire microblaze_0_axi_periph_to_s00_couplers_WREADY;
   wire [3:0]microblaze_0_axi_periph_to_s00_couplers_WSTRB;
-  wire [0:0]microblaze_0_axi_periph_to_s00_couplers_WVALID;
+  wire microblaze_0_axi_periph_to_s00_couplers_WVALID;
   wire [31:0]s00_couplers_to_xbar_ARADDR;
   wire [2:0]s00_couplers_to_xbar_ARPROT;
   wire [0:0]s00_couplers_to_xbar_ARREADY;
@@ -1589,14 +1604,14 @@ module embsys_microblaze_0_axi_periph_0
   assign M07_AXI_wdata[31:0] = m07_couplers_to_microblaze_0_axi_periph_WDATA;
   assign M07_AXI_wstrb[3:0] = m07_couplers_to_microblaze_0_axi_periph_WSTRB;
   assign M07_AXI_wvalid = m07_couplers_to_microblaze_0_axi_periph_WVALID;
-  assign S00_AXI_arready[0] = microblaze_0_axi_periph_to_s00_couplers_ARREADY;
-  assign S00_AXI_awready[0] = microblaze_0_axi_periph_to_s00_couplers_AWREADY;
+  assign S00_AXI_arready = microblaze_0_axi_periph_to_s00_couplers_ARREADY;
+  assign S00_AXI_awready = microblaze_0_axi_periph_to_s00_couplers_AWREADY;
   assign S00_AXI_bresp[1:0] = microblaze_0_axi_periph_to_s00_couplers_BRESP;
-  assign S00_AXI_bvalid[0] = microblaze_0_axi_periph_to_s00_couplers_BVALID;
+  assign S00_AXI_bvalid = microblaze_0_axi_periph_to_s00_couplers_BVALID;
   assign S00_AXI_rdata[31:0] = microblaze_0_axi_periph_to_s00_couplers_RDATA;
   assign S00_AXI_rresp[1:0] = microblaze_0_axi_periph_to_s00_couplers_RRESP;
-  assign S00_AXI_rvalid[0] = microblaze_0_axi_periph_to_s00_couplers_RVALID;
-  assign S00_AXI_wready[0] = microblaze_0_axi_periph_to_s00_couplers_WREADY;
+  assign S00_AXI_rvalid = microblaze_0_axi_periph_to_s00_couplers_RVALID;
+  assign S00_AXI_wready = microblaze_0_axi_periph_to_s00_couplers_WREADY;
   assign m00_couplers_to_microblaze_0_axi_periph_ARREADY = M00_AXI_arready;
   assign m00_couplers_to_microblaze_0_axi_periph_AWREADY = M00_AXI_awready;
   assign m00_couplers_to_microblaze_0_axi_periph_BRESP = M00_AXI_bresp[1:0];
@@ -1665,15 +1680,15 @@ module embsys_microblaze_0_axi_periph_0
   assign microblaze_0_axi_periph_ARESETN_net = ARESETN;
   assign microblaze_0_axi_periph_to_s00_couplers_ARADDR = S00_AXI_araddr[31:0];
   assign microblaze_0_axi_periph_to_s00_couplers_ARPROT = S00_AXI_arprot[2:0];
-  assign microblaze_0_axi_periph_to_s00_couplers_ARVALID = S00_AXI_arvalid[0];
+  assign microblaze_0_axi_periph_to_s00_couplers_ARVALID = S00_AXI_arvalid;
   assign microblaze_0_axi_periph_to_s00_couplers_AWADDR = S00_AXI_awaddr[31:0];
   assign microblaze_0_axi_periph_to_s00_couplers_AWPROT = S00_AXI_awprot[2:0];
-  assign microblaze_0_axi_periph_to_s00_couplers_AWVALID = S00_AXI_awvalid[0];
-  assign microblaze_0_axi_periph_to_s00_couplers_BREADY = S00_AXI_bready[0];
-  assign microblaze_0_axi_periph_to_s00_couplers_RREADY = S00_AXI_rready[0];
+  assign microblaze_0_axi_periph_to_s00_couplers_AWVALID = S00_AXI_awvalid;
+  assign microblaze_0_axi_periph_to_s00_couplers_BREADY = S00_AXI_bready;
+  assign microblaze_0_axi_periph_to_s00_couplers_RREADY = S00_AXI_rready;
   assign microblaze_0_axi_periph_to_s00_couplers_WDATA = S00_AXI_wdata[31:0];
   assign microblaze_0_axi_periph_to_s00_couplers_WSTRB = S00_AXI_wstrb[3:0];
-  assign microblaze_0_axi_periph_to_s00_couplers_WVALID = S00_AXI_wvalid[0];
+  assign microblaze_0_axi_periph_to_s00_couplers_WVALID = S00_AXI_wvalid;
   m00_couplers_imp_OEGTNN m00_couplers
        (.M_ACLK(microblaze_0_axi_periph_ACLK_net),
         .M_ARESETN(microblaze_0_axi_periph_ARESETN_net),

@@ -7,10 +7,10 @@
  * @brief
  * Built off Roy Kravitz test_nexys4io.c application
  *
- * This program tests the Nexys4IO peripheral and driver in an embedded system 
- * running on a MicroBlaze processor. It configures and manages the RGB LED PWM 
- * clock, handles button and switch inputs, and displays output on the 7-segment 
- * display and LEDs. The program also includes an interrupt-driven mechanism to 
+ * This program tests the Nexys4IO peripheral and driver in an embedded system
+ * running on a MicroBlaze processor. It configures and manages the RGB LED PWM
+ * clock, handles button and switch inputs, and displays output on the 7-segment
+ * display and LEDs. The program also includes an interrupt-driven mechanism to
  * continuously update and synchronize switch and button states.
  *
  * The system operates as follows:
@@ -30,7 +30,7 @@
  *
  * BTNL(BTN2) o       o BTNR(BTN1)
  *
- *                o BTND(BTN3) 
+ *                o BTND(BTN3)
  *
  * The button vector format is {BTND(BTN3), BTNL(BTN2), BTNR(BTN1), BTNU(BTN0)}
  *
@@ -59,6 +59,7 @@
 #include "xtmrctr.h"
 #include "xintc.h"
 #include "nexys4IO.h"
+#include "PWM_Analyzer.h"
 
 /********** DEBUG OUTPUT FLAG **********/
 #define _DEBUG  					1		// 1 - Debug on. 0 - Debug off
@@ -93,6 +94,7 @@
 #define INTC_BASEADDR				XPAR_INTC_0_BASEADDR
 #define INTC_HIGHADDR				XPAR_INTC_0_HIGHADDR
 
+
 //Added Code - Define base addresses for the Digilent PWM Analyzer IP
 #define PWM_ANALYZER_RED_BASE  		XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR
 #define PWM_ANALYZER_GREEN_BASE 	XPAR_PWM_ANALYZER_1_S00_AXI_BASEADDR
@@ -126,15 +128,17 @@ int	 do_init(void);
 uint8_t swizzleBtns(uint8_t btns);
 void nexys4io_selfTest(void);
 
+// Added Code - Variables
+uint8_t CRateR = 0;
+uint8_t CRateG = 0;
+uint8_t CRateB = 0;
+
 /********** Main Program **********/
 int main()	{
-    // Added Code - Variables
-    uint8_t CRateR = 0x00;
-    uint8_t CRateG = 0x00;
-    uint8_t CRateB = 0x00;    
-    
+
+
     // Announce that the application has started
-		if (_DEBUG) xil_printf("Starting App in DEBUG mode...") 
+		if (_DEBUG) xil_printf("Starting App in DEBUG mode...\n");
 	xil_printf("ECE 544 Nexys4IO Project 1\r\n");
     xil_printf("By Phil Nevins (p.nevins971@gmail.com)\r\n\n");
 
@@ -147,56 +151,60 @@ int main()	{
 
     // Perform the self test
     microblaze_disable_interrupts();
-		if (_DEBUG) xil_printf("Disabled Microblaze Interrupts...");
-	
-		if (_DEBUG) xil_printf("Running nexys4io_selfTest()...");
+		if (_DEBUG) xil_printf("Disabled Microblaze Interrupts...\n\n");
+
+		if (_DEBUG) xil_printf("Running nexys4io_selfTest()...\n\n");
     nexys4io_selfTest();
-		if (_DEBUG) xil_printf("nexys4io_selfTest() complete!");
+		if (_DEBUG) xil_printf("nexys4io_selfTest() complete!\n\n");
 
     microblaze_enable_interrupts();
-		if (_DEBUG) xil_printf("Enabled Microblaze Interrupts...");
-	
+		if (_DEBUG) xil_printf("Enabled Microblaze Interrupts...\n\n");
+
 	// Main loop
-		if (_DEBUG) xil_printf("Entering Main Loop...");
+		if (_DEBUG) xil_printf("Entering Main Loop...\n\n");
     while (1) {
         if (newbtnsSw) {
             NX4IO_setLEDs(sw);
-            if (_DEBUG) xil_printf("New switches: 0x%04X\tNew buttons: 0x%02X\n\r", sw, btns);
+            if (_DEBUG) xil_printf("\nNew switches: 0x%04X\tNew buttons: 0x%02X\n\n", sw, btns);
 
             // Check each button and update the corresponding LED duty cycle
             if (btns & 0x08) {  // BTND (BTN3) -> RED LED
-				if (_DEBUG) xil_printf("BTND Pressed...");
-                NX4IO_SSEG_setDecPt(SSEGHI, DIGIT7, true);
+				if (_DEBUG) xil_printf("BTND Pressed...\n");
                 CRateR = (CRateR + 25) % 125;  // Ensures it resets after exceeding 100
-				if (_DEBUG) xil_printf("Adjusting RGB1 RED LED...");
+				if (_DEBUG) xil_printf("Adjusting RGB1 RED LED...\n");
             }
-			
+
             if (btns & 0x01) {  // BTNU (BTN0) -> GREEN LED
-				if (_DEBUG) xil_printf("BTNU Pressed...");
-                NX4IO_SSEG_setDecPt(SSEGHI, DIGIT4, true);
+				if (_DEBUG) xil_printf("BTNU Pressed...\n");
                 CRateG = (CRateG + 25) % 125;
-				if (_DEBUG) xil_printf("Adjusting RGB1 GREEN LED...");
+				if (_DEBUG) xil_printf("Adjusting RGB1 GREEN LED...\n");
             }
-			
+
             if (btns & 0x02) {  // BTNR (BTN1) -> BLUE LED
-				if (_DEBUG) xil_printf("BTNR Pressed...");
-                NX4IO_SSEG_setDecPt(SSEGHI, DIGIT5, true);
+				if (_DEBUG) xil_printf("BTNR Pressed...\n");
                 CRateB = (CRateB + 25) % 125;
-				if (_DEBUG) xil_printf("Adjusting RGB1 BLUE LED...");
+				if (_DEBUG) xil_printf("Adjusting RGB1 BLUE LED...\n");
+				uint32_t rgb1_status = NX4IO_RGBLED_getRGB_DATA(RGB1);
+				xil_printf("RGB1 Status: 0x%08X\n", rgb1_status);
+
             }
 
 			if (btns & 0x04) {  // BTNL (BTN2) -> RESET ALL LEDS
-				if (_DEBUG) xil_printf("BTNL Pressed...");
-                NX4IO_SSEG_setDecPt(SSEGHI, DIGIT6, true);
+				if (_DEBUG) xil_printf("BTNL Pressed...\n");
+                //NX4IO_SSEG_setDecPt(SSEGHI, DIGIT6, true);
                 CRateR = 0;
                 CRateG = 0;
                 CRateB = 0;
-				if (_DEBUG) xil_printf("Resetting RGB1...");
+				if (_DEBUG) xil_printf("Resetting RGB1...\n");
             }
 
             // Update the RGB1 LED with new duty cycle values
-            NX4IO_RGBLED_setDutyCycle(RGB1, CRateR, CRateG, CRateB);
-			if (_DEBUG) xil_printf("CRateR: %d \t CRateG: %d \t CRateB: %d \t ",CRateR, CRateG, CRateB);
+            NX4IO_RGBLED_setDutyCycle(RGB2, CRateR, CRateG, CRateB);
+        	usleep(2000 * 1000);
+			if (_DEBUG) xil_printf("CRateR: %d \t CRateG: %d CRateB: %d \t",CRateR, CRateG, CRateB);
+
+
+
 
             newbtnsSw = false; // Reset flag after processing
         }
@@ -233,14 +241,13 @@ void FIT_Handler(void)
     static uint8_t prevBtns;            // previous value of button register
     static uint16_t prevSw;             // previous value of the switch register
     static bool dpOn;                    // true if decimal point 0 is on
-    
+
     uint8_t btns_int;                    // temp btns. Needs to be swizzled to get bits in right place for main()
 
-    if (_DEBUG) xil_printf("FIT_Handler: Entering function...\n");
+
 
     // Initialize the static variables the first time the function is called
     if (!isInitialized) {
-        if (_DEBUG) xil_printf("FIT_Handler: Initializing static variables...\n");
 
         prevBtns = 0x0F;    // Invert btns to get everything started
         prevSw = 0xFFFF;    // Invert switches to get everything started
@@ -251,62 +258,59 @@ void FIT_Handler(void)
     // Toggle DP0 to indicate that FIT handler is being called
     dpOn = !dpOn;
     NX4IO_SSEG_setDecPt(SSEGLO, DIGIT0, dpOn);
-    if (_DEBUG) xil_printf("FIT_Handler: DP0 toggled, value: %d\n", dpOn);
+
 
     // Return if main() hasn't handled the last button and switch changes
     if (newbtnsSw) {
-        if (_DEBUG) xil_printf("FIT_Handler: newbtnsSw is still set, returning...\n");
         return;
     }
 
     // Get the value of the switches
     sw = NX4IO_getSwitches();
-    if (_DEBUG) xil_printf("FIT_Handler: Read switches, value: %X\n", sw);
-    
+
+
     if (prevSw != sw) {
         newbtnsSw = true;
         prevSw = sw;
-        if (_DEBUG) xil_printf("FIT_Handler: Switch change detected, newbtnsSw set to true.\n");
+
     }
 
     // Get the value of the buttons
     btns_int = NX4IO_getBtns();
     btns = swizzleBtns(btns_int);
-    if (_DEBUG) xil_printf("FIT_Handler: Read buttons, value: %X (swizzled: %X)\n", btns_int, btns);
+
 
     if (prevBtns != btns) {
         newbtnsSw = true;
         prevBtns = btns;
-        if (_DEBUG) xil_printf("FIT_Handler: Button change detected, newbtnsSw set to true.\n");
     }
 
     /********** Read PWM Duty Cycles from Analyzer **********/
-    if (_DEBUG) xil_printf("FIT_Handler: Reading PWM duty cycles from PWM_ANALYZER...\n");
 
-    uint8_t pwm_red = Xil_In8(PWM_ANALYZER_RED_BASE);
-    uint8_t pwm_green = Xil_In8(PWM_ANALYZER_GREEN_BASE);
-    uint8_t pwm_blue = Xil_In8(PWM_ANALYZER_BLUE_BASE);
+    //int pwm_red = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_RED_BASE);
 
-    if (_DEBUG) xil_printf("FIT_Handler: PWM values - Red: %d, Green: %d, Blue: %d\n", pwm_red, pwm_green, pwm_blue);
+    //uint8_t pwm_green = Xil_In8(XPAR_PWM_ANALYZER_1_S00_AXI_BASEADDR);
+    //uint8_t pwm_blue = Xil_In8(XPAR_PWM_ANALYZER_2_S00_AXI_BASEADDR);
+
+
+    //if (_DEBUG) xil_printf("FIT_Handler: PWM values - Red: %d, Green: %d, Blue: %d\n", pwm_red, pwm_green, pwm_blue);
 
     /********** Set RGB2 LED to match detected PWM **********/
-    NX4IO_RGBLED_setDutyCycle(RGB2, pwm_red, pwm_green, pwm_blue);
-    if (_DEBUG) xil_printf("FIT_Handler: RGB2 LED set to PWM values.\n");
+    //NX4IO_RGBLED_setDutyCycle(RGB2, pwm_red, pwm_green, pwm_blue);
+
 
     /********** Display Duty Cycle Values on 7-Segment Display **********/
-    if (_DEBUG) xil_printf("FIT_Handler: Updating 7-segment display...\n");
 
-    NX4IO_SSEG_setDigit(SSEGHI, DIGIT7, pwm_red / 10);  // Tens place of RED duty cycle
-    NX4IO_SSEG_setDigit(SSEGHI, DIGIT6, pwm_red % 10);  // Ones place of RED duty cycle
-    NX4IO_SSEG_setDigit(SSEGHI, DIGIT5, CC_BLANK);      // Leave digit 5 blank
-    NX4IO_SSEG_setDigit(SSEGHI, DIGIT4, pwm_green / 10); // Tens place of GREEN duty cycle
-    NX4IO_SSEG_setDigit(SSEGHI, DIGIT3, pwm_green % 10); // Ones place of GREEN duty cycle
-    NX4IO_SSEG_setDigit(SSEGHI, DIGIT2, CC_BLANK);      // Leave digit 2 blank
-    NX4IO_SSEG_setDigit(SSEGLO, DIGIT1, pwm_blue / 10);  // Tens place of BLUE duty cycle
-    NX4IO_SSEG_setDigit(SSEGLO, DIGIT0, pwm_blue % 10);  // Ones place of BLUE duty cycle
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT7, (enum _NX4IO_charcodes)(CRateR / 10));  // Tens place of RED duty cycle
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT6, (enum _NX4IO_charcodes)(CRateR % 10));  // Ones place of RED duty cycle
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT5, CC_BLANK);  // Leave digit 5 blank
+    NX4IO_SSEG_setDigit(SSEGHI, DIGIT4, (enum _NX4IO_charcodes)(CRateG / 10)); // Tens place of GREEN duty cycle
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT3, (enum _NX4IO_charcodes)(CRateG % 10)); // Ones place of GREEN duty cycle
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT2, CC_BLANK);  // Leave digit 2 blank
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT1, (enum _NX4IO_charcodes)(CRateB / 10));  // Tens place of BLUE duty cycle
+    NX4IO_SSEG_setDigit(SSEGLO, DIGIT0, (enum _NX4IO_charcodes)(CRateB % 10));  // Ones place of BLUE duty cycle
 
-    if (_DEBUG) xil_printf("FIT_Handler: 7-segment display updated.\n");
-    if (_DEBUG) xil_printf("FIT_Handler: Exiting function.\n");
+
 }
 
 
@@ -326,8 +330,8 @@ void FIT_Handler(void)
  * @return			XST_Success if the timer is initialized.  XST_FAILURE if it is not
  */
 int  N4IO_RGB_timer_initialize(void) {
-					if (_DEBUG) xil_printf("Entering N410_RGB_timer_initialize...");	
-					
+					if (_DEBUG) xil_printf("Entering N410_RGB_timer_initialize...");
+
 	uint32_t status;	// status from Xilinx Lib calls
 
 	status = XTmrCtr_Initialize(&N4IO_TimerInst,N4IO_PWM_CLK_DEVICE_ID);
@@ -343,10 +347,10 @@ int  N4IO_RGB_timer_initialize(void) {
 	// We are going to use the low level functions because there doesn't
 	// seem to be a configuration option that enables the Generate Out options
 	// and load an initial timer value.  This code comes from xtrctr_low_level_example
-	
+
 	uint32_t ctl = XTC_CSR_AUTO_RELOAD_MASK | XTC_CSR_DOWN_COUNT_MASK | XTC_CSR_EXT_GENERATE_MASK;
 
-		if (_DEBUG) xil_printf("N410_RGB_timer_initialize - ctl = %X (AUTO_RELOAD: %X, DOWN_COUNT: %X, EXT_GENERATE: %X)\n", 
+		if (_DEBUG) xil_printf("N410_RGB_timer_initialize - ctl = %X (AUTO_RELOAD: %X, DOWN_COUNT: %X, EXT_GENERATE: %X)\n",
                 ctl, XTC_CSR_AUTO_RELOAD_MASK, XTC_CSR_DOWN_COUNT_MASK, XTC_CSR_EXT_GENERATE_MASK);
 
 		if (_DEBUG) xil_printf("Setting Control Status Register: BaseAddr = %X, TimerNum = %d, Value = %X (with LOAD_MASK)\n",
@@ -372,7 +376,7 @@ int  N4IO_RGB_timer_initialize(void) {
 
 	// and start it
 		if (_DEBUG) xil_printf("Executing XTmrCTR_Start");
-		
+
 	XTmrCtr_Start(&N4IO_TimerInst, N4IO_PWM_CLK_TIMER_NUM);
 	return XST_SUCCESS;
 }
@@ -389,61 +393,64 @@ int  N4IO_RGB_timer_initialize(void) {
  * @note:  Digilent PWM Analyzer is a low level driver and does not need to be initialized
  */
 int do_init(void) {
-    if (_DEBUG) xil_printf("Entering do_init...\n");
+    if (_DEBUG) xil_printf("Entering do_init...\r");
+    Xil_Out32(XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR + 0x08, 1); // Enable Red
+    Xil_Out32(XPAR_PWM_ANALYZER_1_S00_AXI_BASEADDR + 0x08, 1); // Enable Green
+    Xil_Out32(XPAR_PWM_ANALYZER_2_S00_AXI_BASEADDR + 0x08, 1); // Enable Blue
 
     uint32_t status; // status from Xilinx Lib calls
 
     // Initialize the RGB PWM clock to Nexys4IO
-    if (_DEBUG) xil_printf("Initializing RGB PWM clock...\n");
+    if (_DEBUG) xil_printf("Initializing RGB PWM clock...\r");
     status = N4IO_RGB_timer_initialize();
     if (status != XST_SUCCESS) {
-        if (_DEBUG) xil_printf("RGB PWM clock initialization failed!\n");
+        if (_DEBUG) xil_printf("RGB PWM clock initialization failed!\r");
         return XST_FAILURE;
     }
-    if (_DEBUG) xil_printf("RGB PWM clock initialized successfully.\n");
+    if (_DEBUG) xil_printf("RGB PWM clock initialized successfully.\r");
 
     // Initialize the Nexys4 driver
-    if (_DEBUG) xil_printf("Initializing Nexys4 driver...\n");
+    if (_DEBUG) xil_printf("Initializing Nexys4 driver...\r");
     status = NX4IO_initialize(N4IO_BASEADDR);
     if (status != XST_SUCCESS) {
-        if (_DEBUG) xil_printf("Nexys4 driver initialization failed!\n");
+        if (_DEBUG) xil_printf("Nexys4 driver initialization failed!\r");
         return XST_FAILURE;
     }
-    if (_DEBUG) xil_printf("Nexys4 driver initialized successfully.\n");
+    if (_DEBUG) xil_printf("Nexys4 driver initialized successfully.\r");
 
     // Initialize the interrupt controller
-    if (_DEBUG) xil_printf("Initializing interrupt controller...\n");
+    if (_DEBUG) xil_printf("Initializing interrupt controller...\r");
     status = XIntc_Initialize(&INTC_Inst, INTC_DEVICE_ID);
     if (status != XST_SUCCESS) {
-        if (_DEBUG) xil_printf("Interrupt controller initialization failed!\n");
+        if (_DEBUG) xil_printf("Interrupt controller initialization failed!\r");
         return XST_FAILURE;
     }
-    if (_DEBUG) xil_printf("Interrupt controller initialized successfully.\n");
+    if (_DEBUG) xil_printf("Interrupt controller initialized successfully.\r");
 
     // Connect the interrupt handlers to the interrupts
-    if (_DEBUG) xil_printf("Connecting interrupt handler...\n");
+    if (_DEBUG) xil_printf("Connecting interrupt handler...\r");
     status = XIntc_Connect(&INTC_Inst, FIT_INTR_NUM, (XInterruptHandler)FIT_Handler, (void *)0);
     if (status != XST_SUCCESS) {
-        if (_DEBUG) xil_printf("Failed to connect interrupt handler!\n");
+        if (_DEBUG) xil_printf("Failed to connect interrupt handler!\r");
         return XST_FAILURE;
     }
-    if (_DEBUG) xil_printf("Interrupt handler connected successfully.\n");
+    if (_DEBUG) xil_printf("Interrupt handler connected successfully.\r");
 
     // Start the interrupt controller
-    if (_DEBUG) xil_printf("Starting interrupt controller in REAL mode...\n");
+    if (_DEBUG) xil_printf("Starting interrupt controller in REAL mode...\r");
     status = XIntc_Start(&INTC_Inst, XIN_REAL_MODE);
     if (status != XST_SUCCESS) {
-        if (_DEBUG) xil_printf("Interrupt controller start failed!\n");
+        if (_DEBUG) xil_printf("Interrupt controller start failed!\r");
         return XST_FAILURE;
     }
-    if (_DEBUG) xil_printf("Interrupt controller started successfully.\n");
+    if (_DEBUG) xil_printf("Interrupt controller started successfully.\r");
 
     // Enable interrupts
-    if (_DEBUG) xil_printf("Enabling interrupts...\n");
+    if (_DEBUG) xil_printf("Enabling interrupts...\r");
     XIntc_Enable(&INTC_Inst, FIT_INTR_NUM);
-    if (_DEBUG) xil_printf("Interrupts enabled.\n");
+    if (_DEBUG) xil_printf("Interrupts enabled.\r");
 
-    if (_DEBUG) xil_printf("do_init completed successfully.\n");
+    if (_DEBUG) xil_printf("do_init completed successfully.\r");
     return XST_SUCCESS;
 }
 
@@ -453,7 +460,7 @@ int do_init(void) {
 /**
  * swizzleBtns() - formats the btns register from Nexys4IO for easy processing
  *
- * @brief 
+ * @brief
  * rearranges the bits from the Nexys4IO register {3'b0, 1'b0, BTNU(BTN0), BTND(BTN3), BTNL(BTN2), BTNR(BTN1)}
  * to {BTND(BTN3), BTNL(BTN2), BTNR(BTN1), BTNU(BTN0)}
  *
@@ -472,7 +479,7 @@ uint8_t swizzleBtns(uint8_t btns) {
 	return b;
 }
 
-		
+
 /****************************************************************************/
 /**
  * nexys4io_selfTest() - performs a self test on the NexysA7 peripheral
@@ -486,6 +493,8 @@ uint8_t swizzleBtns(uint8_t btns) {
  *	o Turns off the LEDs and blanks the 7-segment digits and decimal points
  */
  void nexys4io_selfTest(void) {
+	 XTmrCtr_Enable(&N4IO_TimerInst, N4IO_PWM_CLK_TIMER_NUM);
+
 	xil_printf("Starting Nexys4IO self test...\r\n");
 
 	xil_printf("\tcheck functionality of LEDs\r\n");
@@ -506,6 +515,8 @@ uint8_t swizzleBtns(uint8_t btns) {
 	xil_printf("\tcheck functionality of the RGB2 LED\n\r");
 	// RGB2 is controlled by Nexys4IO
 	NX4IO_RGBLED_setChnlEn(RGB2, true, true, true);
+	NX4IO_RGBLED_setChnlEn(RGB1, true, true, true);
+
 	xil_printf("\t\tRGB2 segments set to {{99%%, 00%%, 00%%} duty cycle - display RED\n\r");
 	NX4IO_RGBLED_setDutyCycle(RGB2, 255, 0, 0);
 	usleep(2000 * 1000);
@@ -522,6 +533,15 @@ uint8_t swizzleBtns(uint8_t btns) {
     NX4IO_RGBLED_setDutyCycle(RGB2, 255, 32, 64);
 	usleep(2000 * 1000);
 
+	uint32_t rgb1_cntrl = NX4IO_RGBLED_getRGB_CNTRL(RGB1);
+	xil_printf("RGB1 Control Register: 0x%08X\n", rgb1_cntrl);
+
+	Xil_Out32(N4IO_BASEADDR + NEXYS4IO_RGB1_DATA_OFFSET, 0x00FF0000); // Full RED
+	usleep(2000 * 1000);
+	Xil_Out32(N4IO_BASEADDR + NEXYS4IO_RGB1_DATA_OFFSET, 0x0000FF00); // Full GREEN
+	usleep(2000 * 1000);
+	Xil_Out32(N4IO_BASEADDR + NEXYS4IO_RGB1_DATA_OFFSET, 0x000000FF); // Full BLUE
+	usleep(2000 * 1000);
 
 	// turn off LEDs, display and RGB LEDs
 	NX410_SSEG_setAllDigits(SSEGLO, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);

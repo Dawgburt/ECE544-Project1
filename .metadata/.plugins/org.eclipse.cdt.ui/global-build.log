@@ -1,36 +1,66 @@
 Nothing to build in platform 'nexysa7fpga'
 
-15:37:46 **** Incremental Build of configuration Debug for project Test_Program_3 ****
+15:33:14 **** Incremental Build of configuration Debug for project Test_Program_3 ****
 make all 
-'Building file: ../src/platform.c'
+'Building file: ../src/test_nexys4ioV2.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/test_nexys4io.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_nexys4io.o" -IC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_nexys4io.d" -MT"src/test_nexys4io.o" -o "src/test_nexys4io.o" "../src/test_nexys4io.c"
-'Finished building: ../src/test_nexys4io.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_nexys4ioV2.o" -IC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_nexys4ioV2.d" -MT"src/test_nexys4ioV2.o" -o "src/test_nexys4ioV2.o" "../src/test_nexys4ioV2.c"
+In file included from C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xtmrctr.h:163,
+                 from ../src/test_nexys4ioV2.c:59:
+../src/test_nexys4ioV2.c: In function 'nexys4io_selfTest':
+C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xtmrctr_l.h:174:66: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  174 |         Xil_In32((BaseAddress) + XTmrCtr_Offsets[(TmrCtrNumber)] + \
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+      |                                                                  |
+      |                                                                  XTmrCtr *
+  175 |                         (RegOffset))
+      |                         ~~~~~~~~~~~                               
+C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xtmrctr_l.h:198:43: note: in definition of macro 'XTmrCtr_WriteReg'
+  198 |                            (RegOffset)), (ValueToWrite))
+      |                                           ^~~~~~~~~~~~
+C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xtmrctr_l.h:309:26: note: in expansion of macro 'XTmrCtr_ReadReg'
+  309 |                         (XTmrCtr_ReadReg((BaseAddress), ( TmrCtrNumber), \
+      |                          ^~~~~~~~~~~~~~~
+../src/test_nexys4ioV2.c:496:10: note: in expansion of macro 'XTmrCtr_Enable'
+  496 |          XTmrCtr_Enable(&N4IO_TimerInst, N4IO_PWM_CLK_TIMER_NUM);
+      |          ^~~~~~~~~~~~~~
+In file included from C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/sleep.h:42,
+                 from C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/microblaze_sleep.h:63,
+                 from ../src/test_nexys4ioV2.c:57:
+C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xil_io.h:134:36: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XTmrCtr *'
+  134 | static INLINE u32 Xil_In32(UINTPTR Addr)
+      |                            ~~~~~~~~^~~~
+In file included from C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xtmrctr.h:163,
+                 from ../src/test_nexys4ioV2.c:59:
+C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xtmrctr_l.h:197:68: warning: passing argument 1 of 'Xil_Out32' makes integer from pointer without a cast [-Wint-conversion]
+  197 |         Xil_Out32(((BaseAddress) + XTmrCtr_Offsets[(TmrCtrNumber)] +    \
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+      |                                                                    |
+      |                                                                    XTmrCtr *
+  198 |                            (RegOffset)), (ValueToWrite))
+      |                            ~~~~~~~~~~~~                             
+C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xtmrctr_l.h:308:9: note: in expansion of macro 'XTmrCtr_WriteReg'
+  308 |         XTmrCtr_WriteReg((BaseAddress), (TmrCtrNumber), XTC_TCSR_OFFSET,   \
+      |         ^~~~~~~~~~~~~~~~
+../src/test_nexys4ioV2.c:496:10: note: in expansion of macro 'XTmrCtr_Enable'
+  496 |          XTmrCtr_Enable(&N4IO_TimerInst, N4IO_PWM_CLK_TIMER_NUM);
+      |          ^~~~~~~~~~~~~~
+In file included from C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/sleep.h:42,
+                 from C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/microblaze_sleep.h:63,
+                 from ../src/test_nexys4ioV2.c:57:
+C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include/xil_io.h:208:38: note: expected 'UINTPTR' {aka 'unsigned int'} but argument is of type 'XTmrCtr *'
+  208 | static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+      |                              ~~~~~~~~^~~~
+'Finished building: ../src/test_nexys4ioV2.c'
 ' '
 'Building target: Test_Program_3.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Test_Program_3.elf"  ./src/platform.o ./src/test_nexys4io.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Test_Program_3.elf"  ./src/platform.o ./src/test_nexys4ioV2.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: Test_Program_3.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size Test_Program_3.elf  |tee "Test_Program_3.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  14524	    340	   3328	  18192	   4710	Test_Program_3.elf
+  18732	    340	   3336	  22408	   5788	Test_Program_3.elf
 'Finished building: Test_Program_3.elf.size'
 ' '
-15:37:47 **** Build of configuration Debug for project Test_Program_3_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
-Nothing to build in platform 'nexysa7fpga'
-
-15:37:50 **** Incremental Build of configuration Debug for project Test_Program_3 ****
-make all 
-make: Nothing to be done for 'all'.
-15:37:50 **** Incremental Build of configuration Debug for project Test_Program_3_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
