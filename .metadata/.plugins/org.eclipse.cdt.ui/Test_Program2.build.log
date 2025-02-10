@@ -1,0 +1,26 @@
+14:06:19 **** Build of configuration Debug for project Test_Program2 ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/test_nexys4io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_nexys4io.o" -IC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_nexys4io.d" -MT"src/test_nexys4io.o" -o "src/test_nexys4io.o" "../src/test_nexys4io.c"
+'Finished building: ../src/test_nexys4io.c'
+' '
+'Building target: Test_Program2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Test_Program2.elf"  ./src/platform.o ./src/test_nexys4io.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test_Program2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Test_Program2.elf  |tee "Test_Program2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  13812	    340	   3328	  17480	   4448	Test_Program2.elf
+'Finished building: Test_Program2.elf.size'
+' '
+
+14:06:19 Build Finished (took 590ms)
+

@@ -1,0 +1,3129 @@
+!SESSION 2025-02-02 13:47:28.082 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\.metadata\.bak_0.log
+Created Time: 2025-02-02 15:36:19.853
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:19.854
+!MESSAGE XSCT Command: [bsp config stdout "mdm_1"], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:19.871
+!MESSAGE XSCT command with result: [bsp config stdout "mdm_1"], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.015
+!MESSAGE XSCT Command: [bsp write], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.023
+!MESSAGE XSCT command with result: [bsp write], Result: [null, Successfully saved  the platform at "C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/platform.spr"]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.025
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.027
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.027
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.029
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.029
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.031
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Result: [null, {"PWM_Analyzer_0": {"name": "PWM_Analyzer",
+"ver": "1.0",
+},
+"PWM_Analyzer_1": {"name": "PWM_Analyzer",
+"ver": "1.0",
+},
+"PWM_Analyzer_2": {"name": "PWM_Analyzer",
+"ver": "1.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.9",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.15",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"nexys4io_0": {"name": "nexys4io",
+"ver": "1.0",
+},
+"mdm_1": {"name": "uartlite",
+"ver": "3.7",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.16",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.045
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.047
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.047
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.049
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.088
+!MESSAGE XSCT Command: [bsp reload], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.113
+!MESSAGE XSCT command with result: [bsp reload], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.142
+!MESSAGE XSCT Command: [bsp regenerate], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:20.681
+!MESSAGE XSCT command with result: [bsp regenerate], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:28.954
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:28.956
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:28.958
+!MESSAGE XSCT Command: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\Test_Program_3\_ide\bitstream}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:28.993
+!MESSAGE XSCT command with result: [hsi::internal::extract_hw_files -quiet bit mmi bmm -dir {C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\Test_Program_3\_ide\bitstream}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:36:29.017
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1563)
+	at com.xilinx.sdsoc.core.PlatformHwFilesSyncHelper.updateBitStreamFiles(PlatformHwFilesSyncHelper.java:151)
+	at com.xilinx.sdsoc.core.PlatformHwFilesSyncHelper.internalRun(PlatformHwFilesSyncHelper.java:123)
+	at com.xilinx.sdsoc.core.PlatformHwFilesSyncHelper.lambda$1(PlatformHwFilesSyncHelper.java:104)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 25 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.020
+!MESSAGE XSCT Command: [::hsi::utils::closehw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.023
+!MESSAGE XSCT command with result: [::hsi::utils::closehw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.023
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.238
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.239
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.240
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Sun Feb  2 15:31:34 2025",
+"vivado_version": "2022.2",
+"part": "xc7a100tcsg324-1",
+}]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.240
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.244
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {"PWM_Analyzer_0": {"hier_name": "PWM_Analyzer_0",
+"type": "PWM_Analyzer",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PWM_Analyzer_1": {"hier_name": "PWM_Analyzer_1",
+"type": "PWM_Analyzer",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PWM_Analyzer_2": {"hier_name": "PWM_Analyzer_2",
+"type": "PWM_Analyzer",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"fit_timer_0": {"hier_name": "fit_timer_0",
+"type": "fit_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"proc_sys_reset_0": {"hier_name": "proc_sys_reset_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rgbPWM_0": {"hier_name": "rgbPWM_0",
+"type": "rgbPWM",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:36:29.274
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1563)
+	at com.xilinx.sdsoc.core.PlatformHwFilesSyncHelper.internalRun(PlatformHwFilesSyncHelper.java:131)
+	at com.xilinx.sdsoc.core.PlatformHwFilesSyncHelper.lambda$1(PlatformHwFilesSyncHelper.java:104)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 24 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.373
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:29.375
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, {"microblaze_0": "embsys_i/microblaze_0:embsys_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:36:37.416
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:39.286
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:39.287
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:39.300
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:39.302
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:39.302
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:39.303
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:48.866
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:48.868
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:53.240
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:36:53.242
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.840
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.841
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.842
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.846
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.846
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.850
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.850
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.862
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.863
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.883
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:02.883
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:05.075
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:05.542
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:05.920
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:05.924
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.117
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-750
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.119
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.120
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-750
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.121
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.122
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.123
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_PROFILE_SIZE], Result: [null, 0]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.123
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_FREQ], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.124
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.150
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.152
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {}]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.153
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.170
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Result: [null, {"PWM_Analyzer_0": {},
+"PWM_Analyzer_1": {},
+"PWM_Analyzer_2": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741824,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741828,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741832,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741836,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742108,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742120,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742112,
+},
+},
+"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101952,
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101956,
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101960,
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101968,
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101972,
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101976,
+},
+},
+"mdm_1": {"UART_Receive": {"description": "JTAG UART Receive Data",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_RX": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 1094713344,
+},
+"UART_Transmit": {"description": "JTAG UART Transmit Data",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_TX": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713348,
+},
+"UART_Status": {"description": "JTAG UART Status Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has valid data:
+  0 - Receive FIFO is empty.
+  1 - Receive FIFO has valid data.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full:
+  0 - Receive FIFO is not full.
+  1 - Receive FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty:
+  0 - Transmit FIFO is not empty.
+  1 - Transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full:
+  0 - Transmit FIFO is not full.
+  1 - Transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupt is enabled:
+  0 - Interrupt is disabled.
+  1 - Interrupt is enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713352,
+},
+"UART_Control": {"description": "JTAG UART Control Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"Reset_TX_FIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO:
+  0 - Do nothing.
+  1 - Clear the transmit FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Reset_RX_FIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO:
+  0 - Do nothing.
+  1 - Clear the receive FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Clear_EXT_BRK": {"access": "write-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Clear the EXT_BRK signal set by JTAG:
+  0 - Do nothing.
+  1 - Clear the signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates interrupt for the MDM JTAG UART:
+  0 - Disable interrupt interrupt.
+  1 - Enable interrupt signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713356,
+},
+"Debug_Status": {"description": "Debug Register Access Status Register",
+"address_offset": "0x10",
+"access": "read-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"LOCK": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates the access lock status:
+  0 - The lock is not acquired.
+  1 - The lock has been acquired by the JTAG interface.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713360,
+},
+"Debug_Control": {"description": "Debug Register Access Control Register",
+"address_offset": "0x10",
+"access": "write-only",
+"size": "20",
+"interface": "S_AXI",
+"fields": {"Bit_Size": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "9",
+"desc": "Number of bits in the accessed debug register - 1",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"MDM_Command": {"access": "write-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "8",
+"desc": "MDM command.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Access_MDM": {"access": "write-only",
+"bit_offset": "17",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Access MDM or MicroBlaze Debug register:
+  0 - MicroBlaze debug register access.
+  1 - MDM debug register access.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Access_Lock_Type": {"access": "read-only",
+"bit_offset": "18",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Access lock type write:
+  0 - Release access lock to abort atomic sequence.
+  1 - Lock before first access and unlock after last.
+  2 - Lock before first access, otherwise keep lock.
+  3 - Force lock acquisition, even if aquired by JTAG.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713360,
+},
+"Debug_Data": {"description": "Debug Register Access Data Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"DBG_Data": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Read or write debug register data indicated by DBG_CTRL.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 1094713364,
+},
+"Debug_Lock": {"description": "Debug Register Access Locking Register",
+"address_offset": "0x18",
+"access": "write-only",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"DBG_LOCK": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "Unlock access to registers DBG_CTLR and DBG_DATA when writing 0xEBAB.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713368,
+},
+},
+"microblaze_0_axi_intc": {"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Status Register.
+For each bit up to number of periperhal interrupts:
+  R - Reads active interrupt signal.
+  W - No effect after MER HIE bit has been set, otherwise writes active interrupt signal.
+For remaining bits defined by number of software interrupts:
+  R - Reads software interrupt value.
+  W - Writes software interrupt value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"IPR": {"description": "Interrupt Pending Register",
+"address_offset": "0x4",
+"access": "read-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Pending Register.
+For each bit:
+  R - Reads logical AND of bits in ISR and IER.
+  W - No effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Enable Register.
+For each bit:
+  R - Reads interrupt enable value.
+  W - Writes interrupt enable value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"IAR": {"description": "Interrupt Acknowledge Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Acknowledge Register.
+For each bit:
+  W - Acknowledge interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"SIE": {"description": "Set Interrupt Enables",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Set Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 enables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616208,
+},
+"CIE": {"description": "Clear Interrupt Enables",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Clear Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 disables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616212,
+},
+"IVR": {"description": "Interrupt Vector Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"IVN": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Vector Number.
+  R - Reads ordinal of highest priority, enabled, active interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616216,
+},
+"MER": {"description": "Master Enable Register",
+"address_offset": "0x1C",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"ME": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master IRQ Enable.
+  0 - All interrupts disabled.
+  1 - All interrupts can be enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"HIE": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Hardware Interrupt Enable.
+  0 - HW interrupts disabled.
+  1 - HW interrupts enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616220,
+},
+"IMR": {"description": "Interrupt Mode Register",
+"address_offset": "0x20",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Mode Register.
+For each bit:
+  R - Reads interrupt mode.
+  W - Sets interrupt mode, where 0 is normal mode and 1 is fast mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616224,
+},
+"IVAR[0]": {"description": "Interrupt Vector Address Register 0",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 0 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616448,
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+"nexys4io_0": {},
+}]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.171
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.174
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_axi_intc_s_axi": {"name": "microblaze_0_axi_intc",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"mdm_1_S_AXI": {"name": "mdm_1",
+"base": "0x41400000",
+"high": "0x41400FFF",
+"size": "4096",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x41C00000",
+"high": "0x41C0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_Analyzer_0_S00_AXI": {"name": "PWM_Analyzer_0",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_Analyzer_1_S00_AXI": {"name": "PWM_Analyzer_1",
+"base": "0x44A10000",
+"high": "0x44A1FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_Analyzer_2_S00_AXI": {"name": "PWM_Analyzer_2",
+"base": "0x44A20000",
+"high": "0x44A2FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"nexys4io_0_S00_AXI": {"name": "nexys4io_0",
+"base": "0x44A30000",
+"high": "0x44A3FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x0000FFFF",
+"size": "65536",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.174
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.176
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.176
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.177
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Result: [null, {}]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.178
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.180
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.180
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.181
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.181
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.182
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.182
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.183
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.184
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.186
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.187
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.194
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.194
+!MESSAGE XSCT Command: [version -server], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.195
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.195
+!MESSAGE XSCT Command: [version], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.195
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.196
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.199
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.199
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.212
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.212
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.216
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.216
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.228
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.229
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.233
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.233
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.244
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.245
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.249
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.249
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.259
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.260
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.263
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.264
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.274
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.275
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.285
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.286
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.287
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.287
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.289
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.310
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.313
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.314
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.324
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.325
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.348
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:19.349
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.534
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.557
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.568
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.569
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.599
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Result: [null, nexysa7fpga_13]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.599
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.601
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.601
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.611
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.612
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.614
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:21.615
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.619
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.620
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.634
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.634
+!MESSAGE XSCT Command: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.711
+!MESSAGE XSCT command with result: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.779
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.792
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.792
+!MESSAGE XSCT Command: [con], Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:24.800
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-38: Launching SystemDebugger_Test_Program_3_system
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-02 15:37:24.801
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '5'
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-02 15:37:24.801
+!MESSAGE Tool usage for 'TCF_SYSTEM_DEBUG' updated to '2'
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:27.674
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:39.223
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2306)
+	at org.eclipse.core.internal.events.NotificationManager$NotifyJob.run(NotificationManager.java:44)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 23 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:42.154
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1563)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$2.refreshResources(RefreshScopeManager.java:350)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$2.refreshResources(RefreshScopeManager.java:355)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$2.refreshResources(RefreshScopeManager.java:355)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$2.refreshResources(RefreshScopeManager.java:355)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$2.refreshResources(RefreshScopeManager.java:355)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$2.refreshResources(RefreshScopeManager.java:355)
+	at org.eclipse.cdt.core.resources.RefreshScopeManager$2.run(RefreshScopeManager.java:373)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.refreshProject(BuildRunnerHelper.java:364)
+	at com.xilinx.sdx.scw.project.PlatformProjectBuilder.refreshProject(PlatformProjectBuilder.java:413)
+	at com.xilinx.sdx.scw.project.PlatformProjectBuilder.internalBuildPlatform(PlatformProjectBuilder.java:298)
+	at com.xilinx.sdx.scw.project.PlatformProjectBuilder.invokeIncrementalBuild(PlatformProjectBuilder.java:401)
+	at com.xilinx.sdx.scw.project.PlatformProjectBuilder.invokePlatformGenerate(PlatformProjectBuilder.java:225)
+	at com.xilinx.sdx.scw.project.PlatformProjectBuilder.build(PlatformProjectBuilder.java:183)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 50 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:42.333
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.638
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.640
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.640
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.642
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-02 15:37:46.643
+!MESSAGE Generating MD5 hash for file: C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\nexysa7fpga\export\nexysa7fpga\sw\nexysa7fpga\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.644
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.646
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.646
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.648
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {}]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.648
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.650
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Result: [null, PWM_Analyzer_0 PWM_Analyzer_1 PWM_Analyzer_2 axi_gpio_0 axi_timer_0 mdm_1 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr nexys4io_0]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.650
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.653
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {"PWM_Analyzer_0": {"name": "PWM_Analyzer",
+"ver": "1.0",
+},
+"PWM_Analyzer_1": {"name": "PWM_Analyzer",
+"ver": "1.0",
+},
+"PWM_Analyzer_2": {"name": "PWM_Analyzer",
+"ver": "1.0",
+},
+"axi_gpio_0": {"name": "gpio",
+"ver": "4.9",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.9",
+},
+"microblaze_0_axi_intc": {"name": "intc",
+"ver": "3.15",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.8",
+},
+"nexys4io_0": {"name": "nexys4io",
+"ver": "1.0",
+},
+"mdm_1": {"name": "uartlite",
+"ver": "3.7",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.16",
+},
+}]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.653
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.655
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.655
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.657
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {}]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.688
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:46.689
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-38: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-02 15:37:47.688
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '2'
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:47.917
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:49.986
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:50.439
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Thread: Worker-42: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:50.441
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-42: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:50.442
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-42: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:50.443
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-42: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-02 15:37:50.444
+!MESSAGE Generating MD5 hash for file: C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\nexysa7fpga\export\nexysa7fpga\sw\nexysa7fpga\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:50.444
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-42: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:50.445
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-42: Building Workspace
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-02 15:37:50.862
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '3'
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:50.998
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:539)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 24 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:51.024
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1563)
+	at com.xilinx.sdx.core.SDXCoreActivator._saveLastBuildSettings(SDXCoreActivator.java:438)
+	at com.xilinx.sdx.core.SDXCoreActivator.lambda$1(SDXCoreActivator.java:154)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:185)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 25 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:51.051
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1563)
+	at com.xilinx.sdx.core.SDXCoreActivator._saveLastBuildSettings(SDXCoreActivator.java:438)
+	at com.xilinx.sdx.core.SDXCoreActivator.lambda$1(SDXCoreActivator.java:154)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:185)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 25 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:51.144
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2306)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:198)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateBuildInfo(ManagedBuildManager.java:1407)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.access$0(ManagedBuildManager.java:1398)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager$6.run(ManagedBuildManager.java:1376)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 32 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:51.188
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2306)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:638)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:203)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:149)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:853)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:211)
+	at org.eclipse.cdt.managedbuilder.internal.core.BuildSettingsUtil.checkApplyDescription(BuildSettingsUtil.java:198)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.updateBuildInfo(ManagedBuildManager.java:1407)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.access$0(ManagedBuildManager.java:1398)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager$6.run(ManagedBuildManager.java:1376)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 32 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:52.997
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:54.364
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:37:54.366
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:37:58.999
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.889
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.890
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#9]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.891
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.906
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.906
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.910
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.910
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.921
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.921
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.941
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:03.942
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2025-02-02 15:38:05.019
+!MESSAGE Failed to evaluate: ReferenceExpression [definitionId=org.eclipse.ui.ide.showInDefinition]
+!STACK 0
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.ui.ide.page.activePreferencePage, type=class org.eclipse.swt.widgets.Shell, tester=org.eclipse.ui.internal.ide.handlers.PagePropertyTester@8f436c3]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:69)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:25)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:74)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:100)
+	at org.eclipse.ui.internal.services.EvaluationService.requestEvaluation(EvaluationService.java:290)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.update(DirtyStateTracker.java:48)
+	at org.eclipse.ui.internal.handlers.DirtyStateTracker.propertyChanged(DirtyStateTracker.java:110)
+	at org.eclipse.ui.part.WorkbenchPart.firePropertyChange(WorkbenchPart.java:124)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor.access$0(LscriptEditor.java:1)
+	at com.xilinx.ide.tools.lscript.ui.LscriptEditor$ResourceChangeListener.resourceChanged(LscriptEditor.java:188)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:432)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:352)
+	at org.eclipse.swt.widgets.Widget.getData(Widget.java:497)
+	at org.eclipse.ui.internal.ide.handlers.PagePropertyTester.test(PagePropertyTester.java:39)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 22 more
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:06.131
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:06.941
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:06.944
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:21.895
+!MESSAGE XSCT Command: [disconnect tcfchan#9], Thread: Thread-835
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:21.914
+!MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-835
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.912
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.916
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#11]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.916
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.923
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.923
+!MESSAGE XSCT Command: [version -server], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.924
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.925
+!MESSAGE XSCT Command: [version], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.925
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.925
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.929
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.929
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.940
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.940
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.944
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.944
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.954
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.955
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.958
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.958
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.969
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.969
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.973
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.973
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.984
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.985
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.988
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:22.989
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.000
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.000
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.011
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.012
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.013
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.031
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.035
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.035
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.046
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.047
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.072
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:23.072
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.274
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.299
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.310
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.311
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.315
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Result: [null, nexysa7fpga_13]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.316
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.317
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.318
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.328
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.328
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.335
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:25.335
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.342
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.343
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.357
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.358
+!MESSAGE XSCT Command: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.441
+!MESSAGE XSCT command with result: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.501
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.514
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.515
+!MESSAGE XSCT Command: [con], Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 15:38:28.521
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-42: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-02 15:38:28.522
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '6'
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:18.898
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:18.946
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:18.977
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.007
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.053
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.053
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.054
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.054
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.055
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.055
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.055
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.055
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.056
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.056
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.056
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2025-02-02 19:03:19.056
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 19:03:52.074
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-877
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 19:03:52.075
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [{Format=channel "tcfchan#6" closed, Time=1738551832075, Code=1}, ]. Thread: Thread-877
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 19:03:52.105
+!MESSAGE XSCT Command: [disconnect tcfchan#11], Thread: Thread-880
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-02 19:03:52.109
+!MESSAGE XSCT command with result: [disconnect tcfchan#11], Result: [null, ]. Thread: Thread-880

@@ -1,0 +1,36 @@
+Nothing to build in platform 'nexysa7fpga'
+
+15:37:46 **** Incremental Build of configuration Debug for project Test_Program_3 ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/test_nexys4io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_nexys4io.o" -IC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/test_nexys4io.d" -MT"src/test_nexys4io.o" -o "src/test_nexys4io.o" "../src/test_nexys4io.c"
+'Finished building: ../src/test_nexys4io.c'
+' '
+'Building target: Test_Program_3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Test_Program_3.elf"  ./src/platform.o ./src/test_nexys4io.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Test_Program_3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Test_Program_3.elf  |tee "Test_Program_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14524	    340	   3328	  18192	   4710	Test_Program_3.elf
+'Finished building: Test_Program_3.elf.size'
+' '
+15:37:47 **** Build of configuration Debug for project Test_Program_3_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+Nothing to build in platform 'nexysa7fpga'
+
+15:37:50 **** Incremental Build of configuration Debug for project Test_Program_3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:50 **** Incremental Build of configuration Debug for project Test_Program_3_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
