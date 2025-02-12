@@ -1,0 +1,189 @@
+/**
+ * @file test_nexys4ioV2.c
+ *
+ * @author Phil Nevins (p.nevins971@gmail.com)
+ * @copyright Phil Nevins 2025
+ *
+ * @brief
+ * This program tests the Nexys4IO peripheral and driver on a MicroBlaze processor.
+ * It manages the RGB LED PWM clock, handles button and switch inputs, and displays
+ * relevant information on the 7-segment display and LEDs. The program operates
+ * in an interrupt-driven manner to continuously update switch/button states.
+ *
+ * Features:
+ * - Initializes the RGB LED PWM clock using an AXI timer.
+ * - Reads and processes button and switch inputs.
+ * - Displays button states using decimal points on the 7-segment display.
+ * - Displays switch states using LEDs.
+ * - Reads PWM duty cycle values from an external Digilent PWM Analyzer.
+ * - Updates the RGB LEDs based on button presses and PWM Analyzer values.
+ * - Uses a Fixed Interval Timer (FIT) interrupt handler to periodically update states.
+ *
+ * @note
+ * Supports both Nexys A7 and the Boolean board.
+ *
+ * Pushbutton mapping:
+ *                o BTNU(BTN0)
+ * BTNL(BTN2) o       o BTNR(BTN1)
+ *                o BTND(BTN3)
+ *
+ * The button vector format is: {BTND(BTN3), BTNL(BTN2), BTNR(BTN1), BTNU(BTN0)}
+ *
+ * <pre>
+ * MODIFICATION HISTORY:
+ * ---------------------
+ * Ver   Who  Date       Changes
+ * ----- ---- ---------- -----------------------------------------------
+ * 1.00a  RK  21-Dec-2022 Initial release
+ * 2.00a  RK  24-Jan-2024 Support for both Nexys A7 and Boolean boards
+ * V2.00  PN  9-Feb-2025  Refactored for ECE 544 Project 1 with PWM Analyzer support
+ * </pre>
+ */
+
+/*********** Include Files **********/
+#include <stdio.h>
+#include <stdlib.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xstatus.h"
+#include "microblaze_sleep.h"
+#include "xil_io.h"     // For reading/writing AXI registers
+#include "xtmrctr.h"
+#include "xintc.h"
+#include "nexys4IO.h"
+#include "PWM_Analyzer.h"
+#include "xil_types.h"
+#include "xgpio.h"
+
+/********** Debugging Macros **********/
+#define _DEBUG  					1		// 1 - Debug enabled, 0 - Debug disabled
+
+/*********** PWM Settings **********/
+#define MAXDC	255		// Maximum duty cycle
+#define DCINCR	25		// Duty cycle increment (~10 steps for full range)
+
+/*********** Peripheral Constants **********/
+// Clock Frequencies
+#define CPU_CLOCK_FREQ_HZ			XPAR_CPU_CORE_CLOCK_FREQ_HZ
+#define AXI_CLOCK_FREQ_HZ			XPAR_CPU_M_AXI_DP_FREQ_HZ
+
+// AXI Timer Parameters for Nexys4IO RGB Clock
+#define N4IO_PWM_CLK_DEVICE_ID		XPAR_TMRCTR_0_DEVICE_ID
+#define N4IO_PWM_CLK_BASEADDR		XPAR_TMRCTR_0_BASEADDR
+#define N4IO_PWM_CLK_HIGHADDR		XPAR_TMRCTR_0_HIGHADDR
+#define N4IO_PWM_CLK_FREQ_HZ 		XPAR_TMRCTR_0_CLOCK_FREQ_HZ
+#define N4IO_PWM_CLK_TIMER_NUM		0
+#define N4IO_PWM_CLK_TIMER_VAL		1998
+
+// Nexys4IO Peripheral Definitions
+#define N4IO_DEVICE_ID		   		XPAR_NEXYS4IO_0_DEVICE_ID
+#define N4IO_BASEADDR		    	XPAR_NEXYS4IO_0_S00_AXI_BASEADDR
+#define N4IO_HIGHADDR		    	XPAR_NEXYS4IO_0_S00_AXI_HIGHADDR
+
+// Fixed Interval Timer for Handling Inputs (2Hz)
+#define FIT_CLOCK_FREQ_HZ			2
+#define FIT_INTR_NUM				XPAR_MICROBLAZE_0_AXI_INTC_FIT_TIMER_0_INTERRUPT_INTR
+
+// Interrupt Controller Definitions
+#define INTC_DEVICE_ID				XPAR_INTC_0_DEVICE_ID
+
+// PWM Analyzer Base Addresses
+#define PWM_ANALYZER_RED_BASE  		XPAR_PWM_ANALYZER_0_S00_AXI_BASEADDR
+#define PWM_ANALYZER_GREEN_BASE 	XPAR_PWM_ANALYZER_1_S00_AXI_BASEADDR
+#define PWM_ANALYZER_BLUE_BASE 		XPAR_PWM_ANALYZER_2_S00_AXI_BASEADDR
+
+/*********** Global Variables **********/
+volatile bool newbtnsSw = false; // True if FIT handler updated button/switch states
+volatile uint16_t sw = 0;	// Switch state
+volatile uint8_t btns = 0;	// Button state
+
+u32 pwm_red = 0;
+u32 pwm_green = 0;
+u32 pwm_blue = 0;
+
+u16 pwmRedDC = 0, pwmGreenDC = 0, pwmBlueDC = 0; // 10-bit PWM duty cycles
+bool pwmEnable = true; // PWM enable flag
+
+XGpio GpioPWM;  // GPIO instance for controlling PWM
+
+/********** Function Prototypes **********/
+void FIT_Handler(void);
+int  N4IO_RGB_timer_initialize(void);
+int	 do_init(void);
+uint8_t swizzleBtns(uint8_t btns);
+void nexys4io_selfTest(void);
+u32 buildPWMCtrlReg(bool enable, u16 RedDC, u16 GreenDC, u16 BlueDC);
+void updateRGBPWM(uint16_t red, uint16_t green, uint16_t blue);
+
+/********** Main Program **********/
+int main() {
+
+    xil_printf("ECE 544 Nexys4IO Project 1\r\nBy Phil Nevins (p.nevins971@gmail.com)\r\n");
+
+    init_platform();
+    if (do_init() != XST_SUCCESS) {
+        xil_printf("FATAL: System initialization failed\r\n");
+        return 1;
+    }
+
+    microblaze_disable_interrupts();
+    nexys4io_selfTest();
+    microblaze_enable_interrupts();
+
+    while (1) {
+        if (newbtnsSw) {
+            NX4IO_setLEDs(sw);
+            if (_DEBUG) xil_printf("New switches: 0x%04X | New buttons: 0x%02X\r\n", sw, btns);
+
+            // Update PWM Duty Cycles Based on Button Presses
+            if (btns & 0x08) pwmRedDC = (pwmRedDC + DCINCR <= MAXDC) ? pwmRedDC + DCINCR : 0;
+            if (btns & 0x01) pwmGreenDC = (pwmGreenDC + DCINCR <= MAXDC) ? pwmGreenDC + DCINCR : 0;
+            if (btns & 0x02) pwmBlueDC = (pwmBlueDC + DCINCR <= MAXDC) ? pwmBlueDC + DCINCR : 0;
+            if (btns & 0x04) pwmRedDC = pwmGreenDC = pwmBlueDC = 0;
+
+            // Apply Updated PWM Duty Cycles
+            updateRGBPWM(pwmRedDC, pwmGreenDC, pwmBlueDC);
+            newbtnsSw = false;
+        }
+    }
+
+    cleanup_platform();
+    return 0;
+}
+
+/********** Helper Functions **********/
+
+/**
+ * buildPWMCtrlReg() - Constructs a PWM Control Register Value
+ *
+ * @brief Encodes enable status and 10-bit duty cycles for Red, Green, and Blue channels
+ *
+ * @param enable   True to enable PWM output
+ * @param RedDC    10-bit duty cycle for Red channel
+ * @param GreenDC  10-bit duty cycle for Green channel
+ * @param BlueDC   10-bit duty cycle for Blue channel
+ *
+ * @return Encoded 32-bit PWM Control Register value
+ */
+u32 buildPWMCtrlReg(bool enable, u16 RedDC, u16 GreenDC, u16 BlueDC) {
+    u32 cntlreg = (enable) ? 0x80000000 : 0x00000000;
+    cntlreg |= ((BlueDC & 0x03FF)  << 0) |
+               ((GreenDC & 0x03FF) << 10) |
+               ((RedDC & 0x03FF)   << 20);
+    return cntlreg;
+}
+
+/**
+ * updateRGBPWM() - Updates RGB LED PWM Values
+ *
+ * @brief Writes new PWM values to the GPIO controller and verifies correctness
+ *
+ * @param red    Red channel duty cycle
+ * @param green  Green channel duty cycle
+ * @param blue   Blue channel duty cycle
+ */
+void updateRGBPWM(uint16_t red, uint16_t green, uint16_t blue) {
+    u32 ctlreg = buildPWMCtrlReg(true, red, green, blue);
+    XGpio_DiscreteWrite(&GpioPWM, 1, ctlreg);
+}

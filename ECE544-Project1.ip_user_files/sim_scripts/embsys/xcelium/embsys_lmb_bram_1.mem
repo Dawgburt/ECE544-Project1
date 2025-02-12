@@ -3,12 +3,12 @@
 // SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 // Vivado v2022.2 (64-bit)
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Created on Monday February 10, 2025 - 11:29:17 am, from:
+// Created on Tuesday February 11, 2025 - 03:04:55 pm, from:
 //
 //     Map file     - c:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\ECE544-Project1.gen\sources_1\bd\embsys\embsys.bmm
 //     Data file(s) - c:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/ECE544-Project1.gen/sources_1/bd/embsys/ip/embsys_microblaze_0_1/data/mb_bootloop_le.elf
 //
-// Address space 'embsys_i_microblaze_0.embsys_i_microblaze_0_local_memory_lmb_bram_ADDR_SPACE', bit lane [31:0].
+// Address space 'embsys_i_microblaze_0.embsys_i_microblaze_0_local_memory_lmb_bram_64K_1_ADDR_SPACE', bit lane [31:0].
 //
 // Bus width = 32 bits, number of bus blocks = 1.
 

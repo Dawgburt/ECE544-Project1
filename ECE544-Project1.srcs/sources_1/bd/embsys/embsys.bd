@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2DFF9F148803937C",
+      "boundary_crc": "0x128ADEF39B009A73",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../ECE544-Project1.gen/sources_1/bd/embsys",
       "name": "embsys",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.2"
+      "tool_version": "2022.2",
+      "validated": "true"
     },
     "design_tree": {
       "microblaze_0_axi_periph": {
@@ -51,10 +52,10 @@
         "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
         "port_maps": {
-          "TRI_I": {
-            "physical_name": "gpio_rtl_0_tri_i",
-            "direction": "I",
-            "left": "15",
+          "TRI_O": {
+            "physical_name": "gpio_rtl_0_tri_o",
+            "direction": "O",
+            "left": "31",
             "right": "0"
           }
         }
@@ -65,8 +66,20 @@
         "type": "clk",
         "direction": "I",
         "parameters": {
+          "CLK_DOMAIN": {
+            "value": "embsys_clk_100MHz",
+            "value_src": "default"
+          },
           "FREQ_HZ": {
             "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
           },
           "PHASE": {
             "value": "0.0"
@@ -77,6 +90,10 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_LOW"
           }
@@ -144,15 +161,6 @@
         "direction": "O"
       },
       "rgbRED_0": {
-        "direction": "O"
-      },
-      "RGB1_Blue_0": {
-        "direction": "O"
-      },
-      "RGB1_Green_0": {
-        "direction": "O"
-      },
-      "RGB1_Red_0": {
         "direction": "O"
       }
     },
@@ -1205,8 +1213,20 @@
         "xci_path": "ip\\embsys_axi_gpio_0_0\\embsys_axi_gpio_0_0.xci",
         "inst_hier_path": "axi_gpio_0",
         "parameters": {
+          "C_ALL_INPUTS": {
+            "value": "0"
+          },
+          "C_ALL_OUTPUTS": {
+            "value": "1"
+          },
+          "C_GPIO_WIDTH": {
+            "value": "32"
+          },
+          "C_IS_DUAL": {
+            "value": "0"
+          },
           "GPIO_BOARD_INTERFACE": {
-            "value": "dip_switches_16bits"
+            "value": "Custom"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -1724,24 +1744,6 @@
         "ports": [
           "microblaze_0_xlconcat/dout",
           "microblaze_0_axi_intc/intr"
-        ]
-      },
-      "nexys4io_0_RGB1_Blue": {
-        "ports": [
-          "nexys4io_0/RGB1_Blue",
-          "RGB1_Blue_0"
-        ]
-      },
-      "nexys4io_0_RGB1_Green": {
-        "ports": [
-          "nexys4io_0/RGB1_Green",
-          "RGB1_Green_0"
-        ]
-      },
-      "nexys4io_0_RGB1_Red": {
-        "ports": [
-          "nexys4io_0/RGB1_Red",
-          "RGB1_Red_0"
         ]
       },
       "nexys4io_0_RGB2_Blue": {

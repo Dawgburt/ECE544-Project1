@@ -50,3 +50,14 @@ bsp reload
 catch {bsp regenerate}
 platform clean
 platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {nexysa7fpga}
+platform config -updatehw {C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga.xsa}
+platform generate -domains 
+platform config -updatehw {C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga.xsa}
+platform generate -domains 
+platform clean
+platform generate

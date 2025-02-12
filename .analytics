@@ -173,3 +173,130 @@ timestamp=[2025-02-10 15:22:52], mode=BUILD, duration=0:00:00.623, duration_ms=6
 timestamp=[2025-02-10 15:25:23], mode=BUILD, duration=0:00:00.546, duration_ms=546, data={name=Test_Program_3, configuration=Debug, clean_build=false}
 timestamp=[2025-02-10 15:31:12], mode=BUILD, duration=0:00:00.546, duration_ms=546, data={name=Test_Program_3, configuration=Debug, clean_build=false}
 timestamp=[2025-02-10 15:33:14], mode=BUILD, duration=0:00:00.546, duration_ms=546, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:30:30], mode=WORKBENCH_START, duration=0:00:04.916, duration_ms=4916, data={}
+timestamp=[2025-02-10 16:30:30], mode=WORKBENCH_UI_INIT, duration=0:00:00.491, duration_ms=491, data={editors_count=9, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test_Program_3,Test_Program_3_system,nexysa7fpga}
+timestamp=[2025-02-10 16:30:31], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.259, duration_ms=259, data={}
+timestamp=[2025-02-10 16:30:53], mode=BUILD, duration=0:00:00.200, duration_ms=200, data={name=Test_Program_3, configuration=Debug, clean_build=true}
+timestamp=[2025-02-10 16:30:54], mode=BUILD, duration=0:00:00.745, duration_ms=745, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:30:54], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=Test_Program_3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:34:44], mode=BUILD, duration=0:00:00.201, duration_ms=201, data={name=Test_Program_3, configuration=Debug, clean_build=true}
+timestamp=[2025-02-10 16:34:45], mode=BUILD, duration=0:00:00.726, duration_ms=726, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:34:45], mode=BUILD, duration=0:00:00.096, duration_ms=96, data={name=Test_Program_3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:37:52], mode=BUILD, duration=0:00:00.596, duration_ms=596, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:39:19], mode=BUILD, duration=0:00:00.545, duration_ms=545, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:47:45], mode=BUILD, duration=0:00:00.550, duration_ms=550, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 16:50:02], mode=BUILD, duration=0:00:00.557, duration_ms=557, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 18:24:28], mode=WORKBENCH_START, duration=0:00:05.168, duration_ms=5168, data={}
+timestamp=[2025-02-10 18:24:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.564, duration_ms=564, data={editors_count=9, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test_Program_3,Test_Program_3_system,nexysa7fpga}
+timestamp=[2025-02-10 18:24:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.332, duration_ms=332, data={}
+timestamp=[2025-02-10 18:24:54], mode=BUILD, duration=0:00:00.652, duration_ms=652, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 18:24:54], mode=BUILD, duration=0:00:00.111, duration_ms=111, data={name=Test_Program_3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 18:28:03], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-10 18:30:08], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 12:52:29], mode=WORKBENCH_START, duration=0:00:05.659, duration_ms=5659, data={}
+timestamp=[2025-02-11 12:52:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.640, duration_ms=640, data={editors_count=9, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test_Program_3,Test_Program_3_system,nexysa7fpga}
+timestamp=[2025-02-11 12:52:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.298, duration_ms=298, data={}
+timestamp=[2025-02-11 13:18:54], mode=BUILD, duration=0:00:00.879, duration_ms=879, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:19:24], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=Test_Program_3, configuration=Debug, clean_build=true}
+timestamp=[2025-02-11 13:19:24], mode=BUILD, duration=0:00:00.412, duration_ms=412, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:19:31], mode=BUILD, duration=0:00:00.184, duration_ms=184, data={name=Test_Program_3, configuration=Debug, clean_build=true}
+timestamp=[2025-02-11 13:19:31], mode=BUILD, duration=0:00:00.104, duration_ms=104, data={name=Test_Program_3_system, configuration=Debug, clean_build=true}
+timestamp=[2025-02-11 13:19:34], mode=PLATFORM_GENERATION, duration=0:00:02.725, duration_ms=2725, data={name=nexysa7fpga}
+timestamp=[2025-02-11 13:19:38], mode=PLATFORM_GENERATION, duration=0:00:04.516, duration_ms=4516, data={name=nexysa7fpga}
+timestamp=[2025-02-11 13:19:39], mode=BUILD, duration=0:00:00.344, duration_ms=344, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:20:44], mode=BUILD, duration=0:00:00.240, duration_ms=240, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:22:10], mode=BUILD, duration=0:00:00.789, duration_ms=789, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:23:05], mode=BUILD, duration=0:00:00.515, duration_ms=515, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:24:05], mode=BUILD, duration=0:00:00.231, duration_ms=231, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:26:07], mode=BUILD, duration=0:00:00.236, duration_ms=236, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:26:27], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:26:49], mode=BUILD, duration=0:00:00.669, duration_ms=669, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:30:19], mode=BUILD, duration=0:00:00.306, duration_ms=306, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:31:57], mode=BUILD, duration=0:00:00.232, duration_ms=232, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:32:24], mode=BUILD, duration=0:00:00.235, duration_ms=235, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:32:58], mode=BUILD, duration=0:00:00.535, duration_ms=535, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:38:27], mode=BUILD, duration=0:00:00.599, duration_ms=599, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:41:16], mode=BUILD, duration=0:00:00.634, duration_ms=634, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:46:37], mode=BUILD, duration=0:00:00.598, duration_ms=598, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:49:48], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:51:02], mode=BUILD, duration=0:00:00.592, duration_ms=592, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:51:46], mode=BUILD, duration=0:00:00.553, duration_ms=553, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:52:20], mode=BUILD, duration=0:00:00.540, duration_ms=540, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 13:52:54], mode=BUILD, duration=0:00:00.533, duration_ms=533, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:13:50], mode=BUILD, duration=0:00:00.150, duration_ms=150, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:19:19], mode=BUILD, duration=0:00:00.537, duration_ms=537, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:19:38], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:19:57], mode=BUILD, duration=0:00:00.542, duration_ms=542, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:22:20], mode=BUILD, duration=0:00:00.598, duration_ms=598, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:23:19], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:25:57], mode=BUILD, duration=0:00:00.560, duration_ms=560, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:30:23], mode=BUILD, duration=0:00:00.531, duration_ms=531, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:31:52], mode=BUILD, duration=0:00:00.538, duration_ms=538, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:32:57], mode=BUILD, duration=0:00:00.548, duration_ms=548, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:36:05], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:40:48], mode=BUILD, duration=0:00:00.592, duration_ms=592, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:45:23], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:45:53], mode=BUILD, duration=0:00:00.231, duration_ms=231, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:46:37], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:49:15], mode=BUILD, duration=0:00:00.547, duration_ms=547, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:56:01], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:57:29], mode=BUILD, duration=0:00:00.620, duration_ms=620, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 14:59:06], mode=BUILD, duration=0:00:00.538, duration_ms=538, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:05:31], mode=WORKBENCH_START, duration=0:00:05.080, duration_ms=5080, data={}
+timestamp=[2025-02-11 15:05:31], mode=WORKBENCH_UI_INIT, duration=0:00:00.601, duration_ms=601, data={editors_count=11, platform_editors_count=7, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test_Program_3,Test_Program_3_system,nexysa7fpga}
+timestamp=[2025-02-11 15:05:32], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.274, duration_ms=274, data={}
+timestamp=[2025-02-11 15:06:03], mode=BUILD, duration=0:00:00.640, duration_ms=640, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:06:03], mode=BUILD, duration=0:00:00.109, duration_ms=109, data={name=Test_Program_3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:08:14], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:09:02], mode=PLATFORM_GENERATION, duration=0:00:02.722, duration_ms=2722, data={name=nexysa7fpga}
+timestamp=[2025-02-11 15:09:11], mode=PLATFORM_GENERATION, duration=0:00:04.622, duration_ms=4622, data={name=nexysa7fpga}
+timestamp=[2025-02-11 15:09:12], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:09:12], mode=BUILD, duration=0:00:00.102, duration_ms=102, data={name=Test_Program_3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:09:16], mode=BUILD, duration=0:00:00.096, duration_ms=96, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:09:17], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=Test_Program_3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:15:18], mode=BUILD, duration=0:00:00.548, duration_ms=548, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:19:15], mode=PLATFORM_GENERATION, duration=0:00:05.581, duration_ms=5581, data={name=nexysa7fpga}
+timestamp=[2025-02-11 15:21:31], mode=PLATFORM_GENERATION, duration=0:00:05.312, duration_ms=5312, data={name=nexysa7fpga}
+timestamp=[2025-02-11 15:33:05], mode=BUILD, duration=0:00:00.726, duration_ms=726, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:35:07], mode=BUILD, duration=0:00:00.549, duration_ms=549, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 15:41:12], mode=BUILD, duration=0:00:00.535, duration_ms=535, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:08:51], mode=WORKBENCH_START, duration=0:00:05.489, duration_ms=5489, data={}
+timestamp=[2025-02-11 17:08:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.495, duration_ms=495, data={editors_count=11, platform_editors_count=7, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test_Program_3,Test_Program_3_system,nexysa7fpga}
+timestamp=[2025-02-11 17:08:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.279, duration_ms=279, data={}
+timestamp=[2025-02-11 17:23:01], mode=BUILD, duration=0:00:00.692, duration_ms=692, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:23:22], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:25:31], mode=BUILD, duration=0:00:00.110, duration_ms=110, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:26:24], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:29:02], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:30:30], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:30:59], mode=BUILD, duration=0:00:00.109, duration_ms=109, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:33:14], mode=BUILD, duration=0:00:00.591, duration_ms=591, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:34:33], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:39:25], mode=BUILD, duration=0:00:00.598, duration_ms=598, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:42:46], mode=BUILD, duration=0:00:00.106, duration_ms=106, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:42:46], mode=BUILD, duration=0:00:00.099, duration_ms=99, data={name=Test_Program_3_system, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:44:30], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:46:03], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:49:23], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:51:14], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:53:45], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 17:56:34], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:00:49], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:03:14], mode=BUILD, duration=0:00:00.607, duration_ms=607, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:10:25], mode=BUILD, duration=0:00:00.592, duration_ms=592, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:12:37], mode=BUILD, duration=0:00:00.439, duration_ms=439, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:12:49], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=Test_Program_3, configuration=Debug, clean_build=true}
+timestamp=[2025-02-11 18:12:49], mode=BUILD, duration=0:00:00.107, duration_ms=107, data={name=Test_Program_3_system, configuration=Debug, clean_build=true}
+timestamp=[2025-02-11 18:12:51], mode=PLATFORM_GENERATION, duration=0:00:02.701, duration_ms=2701, data={name=nexysa7fpga}
+timestamp=[2025-02-11 18:12:56], mode=PLATFORM_GENERATION, duration=0:00:04.331, duration_ms=4331, data={name=nexysa7fpga}
+timestamp=[2025-02-11 18:12:56], mode=BUILD, duration=0:00:00.539, duration_ms=539, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:15:12], mode=BUILD, duration=0:00:00.671, duration_ms=671, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:17:17], mode=BUILD, duration=0:00:00.598, duration_ms=598, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:18:12], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:19:51], mode=BUILD, duration=0:00:00.611, duration_ms=611, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:20:48], mode=BUILD, duration=0:00:00.593, duration_ms=593, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:22:57], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:23:58], mode=BUILD, duration=0:00:00.597, duration_ms=597, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:25:07], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:26:35], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-11 18:29:03], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=Test_Program_3, configuration=Debug, clean_build=false}

@@ -1,6 +1,8 @@
-10:23:51 **** Incremental Build of configuration Debug for project Test_Program_3_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+18:12:49 **** Clean-only build of configuration Debug for project Test_Program_3_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
 
-10:23:51 Build Finished (took 90ms)
+18:12:49 Build Finished (took 103ms)
 

@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Mon Feb 10 10:39:39 2025
+//Date        : Tue Feb 11 14:07:53 2025
 //Host        : Dawgburts-Mothership running 64-bit major release  (build 9200)
 //Command     : generate_target embsys.bd
 //Design      : embsys
@@ -11,10 +11,7 @@
 
 (* CORE_GENERATION_INFO = "embsys,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=embsys,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=21,numNonXlnxBlks=4,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=6,da_clkrst_cnt=2,da_mb_cnt=3,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "embsys.hwdef" *) 
 module embsys
-   (RGB1_Blue_0,
-    RGB1_Green_0,
-    RGB1_Red_0,
-    RGB2_Blue_0,
+   (RGB2_Blue_0,
     RGB2_Green_0,
     RGB2_Red_0,
     an_0,
@@ -27,7 +24,7 @@ module embsys
     clk_100MHz,
     controlReg_0,
     dp_0,
-    gpio_rtl_0_tri_i,
+    gpio_rtl_0_tri_o,
     led_0,
     resetn,
     rgbBLUE_0,
@@ -35,9 +32,6 @@ module embsys
     rgbRED_0,
     seg_0,
     sw_0);
-  output RGB1_Blue_0;
-  output RGB1_Green_0;
-  output RGB1_Red_0;
   output RGB2_Blue_0;
   output RGB2_Green_0;
   output RGB2_Red_0;
@@ -48,10 +42,10 @@ module embsys
   input btnR_0;
   input btnU_0;
   output clkPWM_0;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN embsys_sys_clock, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk_100MHz;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_100MHZ CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_100MHZ, CLK_DOMAIN embsys_clk_100MHz, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk_100MHz;
   input [31:0]controlReg_0;
   output dp_0;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_rtl_0 TRI_I" *) input [15:0]gpio_rtl_0_tri_i;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio_rtl_0 TRI_O" *) output [31:0]gpio_rtl_0_tri_o;
   output [15:0]led_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input resetn;
   output rgbBLUE_0;
@@ -61,7 +55,7 @@ module embsys
   input [15:0]sw_0;
 
   wire Net;
-  wire [15:0]axi_gpio_0_GPIO_TRI_I;
+  wire [31:0]axi_gpio_0_GPIO_TRI_O;
   wire axi_timer_0_generateout0;
   wire btnC_0_1;
   wire btnD_0_1;
@@ -269,9 +263,6 @@ module embsys
   wire [31:0]microblaze_0_interrupt_ADDRESS;
   wire microblaze_0_interrupt_INTERRUPT;
   wire [0:0]microblaze_0_intr;
-  wire nexys4io_0_RGB1_Blue;
-  wire nexys4io_0_RGB1_Green;
-  wire nexys4io_0_RGB1_Red;
   wire nexys4io_0_RGB2_Blue;
   wire nexys4io_0_RGB2_Green;
   wire nexys4io_0_RGB2_Red;
@@ -292,14 +283,10 @@ module embsys
   wire sys_clock_1;
 
   assign Net = resetn;
-  assign RGB1_Blue_0 = nexys4io_0_RGB1_Blue;
-  assign RGB1_Green_0 = nexys4io_0_RGB1_Green;
-  assign RGB1_Red_0 = nexys4io_0_RGB1_Red;
   assign RGB2_Blue_0 = nexys4io_0_RGB2_Blue;
   assign RGB2_Green_0 = nexys4io_0_RGB2_Green;
   assign RGB2_Red_0 = nexys4io_0_RGB2_Red;
   assign an_0[7:0] = nexys4io_0_an;
-  assign axi_gpio_0_GPIO_TRI_I = gpio_rtl_0_tri_i[15:0];
   assign btnC_0_1 = btnC_0;
   assign btnD_0_1 = btnD_0;
   assign btnL_0_1 = btnL_0;
@@ -308,6 +295,7 @@ module embsys
   assign clkPWM_0 = rgbPWM_0_clkPWM;
   assign controlReg_0_1 = controlReg_0[31:0];
   assign dp_0 = nexys4io_0_dp;
+  assign gpio_rtl_0_tri_o[31:0] = axi_gpio_0_GPIO_TRI_O;
   assign led_0[15:0] = nexys4io_0_led;
   assign rgbBLUE_0 = rgbPWM_0_rgbBLUE;
   assign rgbGREEN_0 = rgbPWM_0_rgbGREEN;
@@ -385,7 +373,7 @@ module embsys
         .s00_axi_wstrb(microblaze_0_axi_periph_M07_AXI_WSTRB),
         .s00_axi_wvalid(microblaze_0_axi_periph_M07_AXI_WVALID));
   embsys_axi_gpio_0_0 axi_gpio_0
-       (.gpio_io_i(axi_gpio_0_GPIO_TRI_I),
+       (.gpio_io_o(axi_gpio_0_GPIO_TRI_O),
         .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(microblaze_0_axi_periph_M02_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),
@@ -760,10 +748,7 @@ module embsys
        (.In0(fit_timer_0_Interrupt),
         .dout(microblaze_0_intr));
   embsys_nexys4io_0_0 nexys4io_0
-       (.RGB1_Blue(nexys4io_0_RGB1_Blue),
-        .RGB1_Green(nexys4io_0_RGB1_Green),
-        .RGB1_Red(nexys4io_0_RGB1_Red),
-        .RGB2_Blue(nexys4io_0_RGB2_Blue),
+       (.RGB2_Blue(nexys4io_0_RGB2_Blue),
         .RGB2_Green(nexys4io_0_RGB2_Green),
         .RGB2_Red(nexys4io_0_RGB2_Red),
         .RGBLED_Clock(axi_timer_0_generateout0),
