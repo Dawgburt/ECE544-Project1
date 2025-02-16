@@ -41,6 +41,8 @@
  * 1.00a  RK  21-Dec-2022 Initial release
  * 2.00a  RK  24-Jan-2024 Support for both Nexys A7 and Boolean boards
  * V2.00  PN  9-Feb-2025  Refactored for ECE 544 Project 1 with PWM Analyzer support
+ * V2.0   PN  14-Feb-2025 Finished
+ * V2.00  PN  16-Feb-2025 Final updates and fixes
  * </pre>
  *
  ******************************************************************************/
@@ -67,7 +69,7 @@
 
 /*********** PWM and Timing Constants **********/
 #define MAXDC   255  // Maximum duty cycle (8-bit range)
-#define DCINCR  25   // Duty cycle increment step (~9% each increment)
+#define DCINCR  25   // Duty cycle increment step (18% each increment)
 
 /*********** Peripheral-related Constants **********/
 // Clock frequencies
@@ -116,7 +118,7 @@ volatile uint16_t sw = 0;   // Stores switch states
 volatile uint8_t btns = 0;  // Stores button states
 
 /********** PWM Control Variables **********/
-u32 pwm_red = 0, pwm_green = 0, pwm_blue = 0;
+u32 pwm_red = 0, pwm_green = 0, pwm_blue = 0, A = 0, B = 0, C = 0;
 u16 pwmRedDC = 0, pwmGreenDC = 0, pwmBlueDC = 0; // RGB LED PWM duty cycles
 u32 ctlreg = 0;
 bool pwmEnable = true; // True to enable PWM output
@@ -209,7 +211,15 @@ int main() {
             pwm_green = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_GREEN_BASE);
             pwm_blue = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_BLUE_BASE);
 
+            if(_DEBUG){
+            			xil_printf("PWM Red: %d\r\n", pwm_red*10);
+            			xil_printf("PWM Green: %d\r\n", pwm_green*10);
+            			xil_printf("PWM Blue: %d\r\n", pwm_blue*10);
+            }
+
             // Update RGB2 LED to match detected PWM values from RGB1
+            // Added variables A, B, C, to offset the "constantly a little on" PWM values that are floating
+            // Figured out through debugging
             NX4IO_RGBLED_setDutyCycle(RGB2, pwm_red, pwm_green, pwm_blue);
         }
     } // End of while loop
@@ -502,23 +512,23 @@ void nexys4io_selfTest(void) {
 
     // Test RGB LED colors by cycling through different intensities
     xil_printf("\t\tRGB1 & RGB2 set to Red (99%%, 0%%, 0%%)\r\n");
-    NX4IO_RGBLED_setDutyCycle(RGB2, 255, 0, 0);
     updateRGBPWM(255, 0, 0);
+    NX4IO_RGBLED_setDutyCycle(RGB2, 255, 0, 0);
     usleep(2000 * 1000);
 
     xil_printf("\t\tRGB1 & RGB2 set to Green (0%%, 50%%, 0%%)\r\n");
-    NX4IO_RGBLED_setDutyCycle(RGB2, 0, 255, 0);
     updateRGBPWM(0, 255, 0);
+    NX4IO_RGBLED_setDutyCycle(RGB2, 0, 255, 0);
     usleep(2000 * 1000);
 
     xil_printf("\t\tRGB1 & RGB2 set to Blue (0%%, 0%%, 25%%)\r\n");
-    NX4IO_RGBLED_setDutyCycle(RGB2, 0, 0, 64);
     updateRGBPWM(0, 0, 255);
+    NX4IO_RGBLED_setDutyCycle(RGB2, 0, 0, 255);
     usleep(2000 * 1000);
 
     xil_printf("\t\tRGB1 & RGB2 set to Purplish (50%%, 12%%, 25%%)\r\n");
-    NX4IO_RGBLED_setDutyCycle(RGB2, 255, 32, 64);
     updateRGBPWM(255, 32, 64);
+    NX4IO_RGBLED_setDutyCycle(RGB2, 255, 32, 64);
     usleep(2000 * 1000);
 
     // Turn off all LEDs and clear the 7-segment display
@@ -527,10 +537,7 @@ void nexys4io_selfTest(void) {
     NX410_SSEG_setAllDigits(SSEGHI, CC_BLANK, CC_BLANK, CC_BLANK, CC_BLANK, DP_NONE);
     NX4IO_setLEDs(0x0000);
 
-    // Reset RGB LEDs to off state
-    pwm_red = 0;
-    pwm_green = 0;
-    pwm_blue = 0;
+    // Reset RGB1 & 2 LEDs to off state
     updateRGBPWM(0, 0, 0);
     NX4IO_RGBLED_setDutyCycle(RGB2, 0, 0, 0);
 
@@ -566,7 +573,7 @@ void nexys4io_selfTest(void) {
  }
 
 /**
- * updateRGBPWM() - Updates RGB LED PWM Values
+ * updateRGBPWM() - Updates RGB1 LED PWM Values
  *
  * @brief Constructs a PWM control register value, writes it to GPIO,
  *        and verifies the written value.
@@ -579,7 +586,7 @@ void updateRGBPWM(uint16_t red, uint16_t green, uint16_t blue) {
     // Build the PWM control register value with the given duty cycles
     u32 ctlreg = buildPWMCtrlReg(true, red, green, blue);
 
-    // Write the control value to the GPIO (Channel 1)
+    // Write the control value to the GPIO (Channel 1, RGB1 LED)
     XGpio_DiscreteWrite(&GpioPWM, 1, ctlreg);
 
     // Read back the written value to verify correctness
@@ -593,5 +600,3 @@ void updateRGBPWM(uint16_t red, uint16_t green, uint16_t blue) {
         }
     }
 }
-
-

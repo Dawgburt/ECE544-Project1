@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\ECE544-Project1.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
