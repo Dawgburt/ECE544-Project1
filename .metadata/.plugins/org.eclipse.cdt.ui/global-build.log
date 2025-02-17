@@ -1,6 +1,6 @@
 Nothing to build in platform 'nexysa7fpga'
 
-15:15:16 **** Incremental Build of configuration Debug for project Test_Program_3 ****
+16:18:40 **** Incremental Build of configuration Debug for project Test_Program_3 ****
 make all 
 'Building file: ../src/test_nexys4ioV2.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -15,6 +15,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/ECE544-EmbeddedSystemsFPGA/ece544w25_pr
 'Invoking: MicroBlaze Print Size'
 mb-size Test_Program_3.elf  |tee "Test_Program_3.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24628	    356	   3368	  28352	   6ec0	Test_Program_3.elf
+  24816	    356	   3364	  28536	   6f78	Test_Program_3.elf
 'Finished building: Test_Program_3.elf.size'
 ' '

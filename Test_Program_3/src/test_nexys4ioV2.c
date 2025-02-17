@@ -69,7 +69,7 @@
 
 /*********** PWM and Timing Constants **********/
 #define MAXDC   255  // Maximum duty cycle (8-bit range)
-#define DCINCR  25   // Duty cycle increment step (18% each increment)
+#define DCINCR  50   // Duty cycle increment step (18% each increment)
 
 /*********** Peripheral-related Constants **********/
 // Clock frequencies
@@ -211,16 +211,22 @@ int main() {
             pwm_green = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_GREEN_BASE);
             pwm_blue = PWM_Analyzer_GetDutyCycle_percent(PWM_ANALYZER_BLUE_BASE);
 
-            if(_DEBUG){
-            			xil_printf("PWM Red: %d\r\n", pwm_red*10);
-            			xil_printf("PWM Green: %d\r\n", pwm_green*10);
-            			xil_printf("PWM Blue: %d\r\n", pwm_blue*10);
+            // Convert 0-99% range to 0-255 range
+            uint8_t red_255 = (pwm_red * 255) / 100;
+            uint8_t green_255 = (pwm_green * 255) / 100;
+            uint8_t blue_255 = (pwm_blue * 255) / 100;
+
+            if (_DEBUG) {
+                xil_printf("PWM Red: %d (scaled: %d)\r\n", pwm_red, red_255);
+                xil_printf("PWM Green: %d (scaled: %d)\r\n", pwm_green, green_255);
+                xil_printf("PWM Blue: %d (scaled: %d)\r\n", pwm_blue, blue_255);
             }
 
             // Update RGB2 LED to match detected PWM values from RGB1
             // Added variables A, B, C, to offset the "constantly a little on" PWM values that are floating
             // Figured out through debugging
-            NX4IO_RGBLED_setDutyCycle(RGB2, pwm_red, pwm_green, pwm_blue);
+            NX4IO_RGBLED_setDutyCycle(RGB2, red_255, green_255, blue_255);
+
         }
     } // End of while loop
 

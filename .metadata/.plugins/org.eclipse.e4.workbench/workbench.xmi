@@ -390,7 +390,7 @@
       </children>
     </children>
     <sharedElements xsi:type="advanced:Area" xmi:id="_wFMBkOGqEe-jrsIMDlZFsQ" elementId="org.eclipse.ui.editorss" selectedElement="_wFMBkeGqEe-jrsIMDlZFsQ">
-      <children xsi:type="basic:PartStack" xmi:id="_wFMBkeGqEe-jrsIMDlZFsQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_pcZm8OjBEe-eSq9zsqT2Ow">
+      <children xsi:type="basic:PartStack" xmi:id="_wFMBkeGqEe-jrsIMDlZFsQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_LRZLgOf-Ee-_9f-K_TbEPA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -431,10 +431,12 @@
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_LRZLgOf-Ee-_9f-K_TbEPA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PWM_Analyzer.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;PWM_Analyzer.c&quot; partName=&quot;PWM_Analyzer.c&quot; title=&quot;PWM_Analyzer.c&quot; tooltip=&quot;nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/PWM_Analyzer_v1_0/src/PWM_Analyzer.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/PWM_Analyzer_v1_0/src/PWM_Analyzer.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;47&quot; selectionOffset=&quot;2245&quot; selectionTopPixel=&quot;690&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;PWM_Analyzer.c&quot; partName=&quot;PWM_Analyzer.c&quot; title=&quot;PWM_Analyzer.c&quot; tooltip=&quot;nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/PWM_Analyzer_v1_0/src/PWM_Analyzer.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/PWM_Analyzer_v1_0/src/PWM_Analyzer.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2474&quot; selectionTopPixel=&quot;558&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_bXCDQOgHEe-_9f-K_TbEPA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PWM_Analyzer.h" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;PWM_Analyzer.h&quot; partName=&quot;PWM_Analyzer.h&quot; title=&quot;PWM_Analyzer.h&quot; tooltip=&quot;nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/PWM_Analyzer_v1_0/src/PWM_Analyzer.h&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/PWM_Analyzer_v1_0/src/PWM_Analyzer.h&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3223&quot; selectionTopPixel=&quot;638&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -449,12 +451,10 @@
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_pcZm8OjBEe-eSq9zsqT2Ow" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="test_nexys4ioV2.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;test_nexys4ioV2.c&quot; partName=&quot;test_nexys4ioV2.c&quot; title=&quot;test_nexys4ioV2.c&quot; tooltip=&quot;Test_Program_3/src/test_nexys4ioV2.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Test_Program_3/src/test_nexys4ioV2.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;23649&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;390&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;test_nexys4ioV2.c&quot; partName=&quot;test_nexys4ioV2.c&quot; title=&quot;test_nexys4ioV2.c&quot; tooltip=&quot;Test_Program_3/src/test_nexys4ioV2.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Test_Program_3/src/test_nexys4ioV2.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;23937&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;8559&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_6RS4wOjHEe-eSq9zsqT2Ow" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="xgpio_selftest.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;xgpio_selftest.c&quot; partName=&quot;xgpio_selftest.c&quot; title=&quot;xgpio_selftest.c&quot; tooltip=&quot;nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/gpio_v4_9/src/xgpio_selftest.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/nexysa7fpga/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/gpio_v4_9/src/xgpio_selftest.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2886&quot; selectionTopPixel=&quot;640&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -499,6 +499,9 @@
         <tags>menuContribution:popup</tags>
       </menus>
       <menus xsi:type="menu:PopupMenu" xmi:id="_VDWuQOyzEe-KB4eG9mzMEQ" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
+        <tags>menuContribution:popup</tags>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_5s2ncOzDEe-lMpqUbAtWGA" elementId="com.xilinx.ide.projectExplorer#PopupMenu">
         <tags>menuContribution:popup</tags>
       </menus>
       <toolbar xmi:id="_wKKoMeGqEe-jrsIMDlZFsQ" elementId="com.xilinx.ide.projectExplorer"/>
@@ -3551,7 +3554,7 @@
   <addons xmi:id="_v50fJ-GqEe-jrsIMDlZFsQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_v50fKOGqEe-jrsIMDlZFsQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_v55-oOGqEe-jrsIMDlZFsQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_4lfWwezDEe-lMpqUbAtWGA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_v6_jwOGqEe-jrsIMDlZFsQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_a4xRsOGrEe-ql-BBi6KwSw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
@@ -3564,6 +3567,7 @@
   <addons xmi:id="_rkiXIOjMEe-I_7FU3Wd7CQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_6R2QYOjdEe-AHIDOP35Bnw" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <addons xmi:id="_TrQ58eyzEe-KB4eG9mzMEQ" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
+  <addons xmi:id="_4lrkAOzDEe-lMpqUbAtWGA" elementId="com.xilinx.sdk.targetmanager.ui.addon.view" contributionURI="bundleclass://com.xilinx.sdk.targetmanager/com.xilinx.sdk.targetmanager.ui.ViewVisibilityAdapterAddon"/>
   <categories xmi:id="_v6J2QOGqEe-jrsIMDlZFsQ" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_v6J2QeGqEe-jrsIMDlZFsQ" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
   <categories xmi:id="_v6J2QuGqEe-jrsIMDlZFsQ" elementId="org.eclipse.ui.category.edit" name="Edit"/>

@@ -332,3 +332,10 @@ timestamp=[2025-02-16 15:09:49], mode=BUILD, duration=0:00:00.601, duration_ms=6
 timestamp=[2025-02-16 15:11:41], mode=BUILD, duration=0:00:00.598, duration_ms=598, data={name=Test_Program_3, configuration=Debug, clean_build=false}
 timestamp=[2025-02-16 15:13:30], mode=BUILD, duration=0:00:00.608, duration_ms=608, data={name=Test_Program_3, configuration=Debug, clean_build=false}
 timestamp=[2025-02-16 15:15:17], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-16 16:12:38], mode=WORKBENCH_START, duration=0:00:05.238, duration_ms=5238, data={}
+timestamp=[2025-02-16 16:12:38], mode=WORKBENCH_UI_INIT, duration=0:00:00.572, duration_ms=572, data={editors_count=11, platform_editors_count=7, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,Test_Program_3,Test_Program_3_system,nexysa7fpga}
+timestamp=[2025-02-16 16:12:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.270, duration_ms=270, data={}
+timestamp=[2025-02-16 16:14:09], mode=BUILD, duration=0:00:00.628, duration_ms=628, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-16 16:16:06], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-16 16:16:25], mode=BUILD, duration=0:00:00.120, duration_ms=120, data={name=Test_Program_3, configuration=Debug, clean_build=false}
+timestamp=[2025-02-16 16:18:40], mode=BUILD, duration=0:00:00.610, duration_ms=610, data={name=Test_Program_3, configuration=Debug, clean_build=false}

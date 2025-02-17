@@ -10606,3 +10606,2296 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 15:17:31.914
 !MESSAGE XSCT command with result: [disconnect tcfchan#28], Result: [null, ]. Thread: Thread-1764
+!SESSION 2025-02-16 16:12:28.260 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-02-16 16:12:34.864
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-02-16 16:12:37.435
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-02-16 16:12:37.435
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2025-02-16 16:12:37.435
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:38.294
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:38.294
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:38.309
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-9
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:38.309
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:38.310
+!MESSAGE XSCT Command: [setws C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:38.312
+!MESSAGE XSCT command with result: [setws C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:38.939
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:39.097
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:39.097
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:12:39.098
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2022.2/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.793
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.978
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.982
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.985
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.985
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.988
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-16 16:14:08.989
+!MESSAGE Generating MD5 hash for file: C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\nexysa7fpga\export\nexysa7fpga\sw\nexysa7fpga\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.993
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:08.994
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:14.324
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:14.326
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {"device": "7a100t",
+"family": "artix7",
+"timestamp": "Tue Feb 11 15:04:47 2025",
+"vivado_version": "2022.2",
+"part": "xc7a100tcsg324-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:14.327
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:14.329
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, {"microblaze_0": "embsys_i/microblaze_0:embsys_i/microblaze_0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:14.329
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:14.338
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {"PWM_Analyzer_0": {"hier_name": "PWM_Analyzer_0",
+"type": "PWM_Analyzer",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PWM_Analyzer_1": {"hier_name": "PWM_Analyzer_1",
+"type": "PWM_Analyzer",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PWM_Analyzer_2": {"hier_name": "PWM_Analyzer_2",
+"type": "PWM_Analyzer",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_0": {"hier_name": "axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"fit_timer_0": {"hier_name": "fit_timer_0",
+"type": "fit_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"nexys4io_0": {"hier_name": "nexys4io_0",
+"type": "nexys4io",
+"version": "3_0",
+"ip_type": "PERIPHERAL",
+},
+"proc_sys_reset_0": {"hier_name": "proc_sys_reset_0",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rgbPWM_0": {"hier_name": "rgbPWM_0",
+"type": "rgbPWM",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:19.716
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:19.718
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:19.751
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:19.753
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:19.754
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_BASE_VECTORS], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:19.756
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:29.580
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:29.581
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:36.303
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:36.304
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:45.904
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.100
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.102
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.356
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.358
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.362
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.363
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.372
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.399
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.421
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:48.423
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:50.709
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:51.510
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:51.512
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.629
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.632
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {}]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.632
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.654
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Result: [null, {"PWM_Analyzer_0": {},
+"PWM_Analyzer_1": {},
+"PWM_Analyzer_2": {},
+"axi_gpio_0": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741824,
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741828,
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741832,
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_2_GPIO_TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073741836,
+},
+"GIER": {"description": "Global_Interrupt_Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Global_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742108,
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742120,
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"Channel_1_Interrupt_Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel_2_Interrupt_Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1073742112,
+},
+},
+"axi_timer_0": {"TCSR0": {"description": "Timer 0 Control and Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Mode
+0 - Timer mode is generate
+1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT0": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 0
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT0": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 0
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT0": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 0
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT0": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 0.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.      0 = Hold counter or capture value. The TLR must be read before providing the external capture.      1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD0": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 0      0 = No load      1 = Loads timer with value in TLR0 Setting this bit loads timer/counter register (TCR0) with a specified value in the timer/counter load register (TLR0).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT0) bit in TCSR0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT0": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 0
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T0INT) in TCSR0.      0 - Disable interrupt signal   1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT0": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 0
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T0INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 0 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT   1 - Clear T0INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA0": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 0      0 - Disable pulse width modulation      1 - Enable pulse width modulation PWM requires using Timer 0 and Timer 1 together as a pair.  Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0 and C_GEN0_ASSERT and C_GEN1_ASSERT must be 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run) This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. 
+Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CASC": {"access": "read-write",
+"bit_offset": "11",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable cascade mode of timers      0 - Disable cascaded operation      1 - Enable cascaded operation Cascaded operation requires using Timer 0 and Timer 1 together as a pair.  The counting event for the Timer 1 is when the Timer 0 rolls over from all 1s to all 0s or vice-versa when counting down.
+TLR0 and TLR1 are used for lower 32-bit and higher 32-bit respectively. Similarly, TCR0 contains lower 32-bits for the 64-bit counter and TCR1 contains the higher 32-bits.
+Only TCSR0 is valid for both the timer/counters in this mode.
+This CASC bit must be set before enabling the timer/counter.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101952,
+},
+"TLR0": {"description": "Timer 0 Load Register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101956,
+},
+"TCR0": {"description": "Timer 0 Counter Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101960,
+},
+"TCSR1": {"description": "Timer 1 Control and Status Register",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"MDT1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Mode
+  0 - Timer mode is generate
+  1 - Timer mode is capture
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"UDT1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Up/Down Count Timer 1
+  0 - Timer functions as up counter
+  1 - Timer functions as down counter
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GENT1": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Generate Signal Timer 1
+  0 - Disables external generate signal
+  1 - Enables external generate signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CAPT1": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable External Capture Trigger Timer 1
+  0 - Disables external capture trigger
+  1 - Enables external capture trigger
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARHT1": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Auto Reload/Hold Timer 1.
+When the timer is in Generate mode, this bit determines whether the counter reloads the generate value and continues running or holds at the termination value. 
+In Capture mode, this bit determines whether a new capture trigger overwrites the previous captured value or if the previous value is held.
+0 = Hold counter or capture value. The TLR must be read before providing the external capture.   
+1 = Reload generate value or overwrite capture value
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"LOAD1": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Load Timer 1      0 = No load      1 = Loads timer with value in TLR1 Setting this bit loads timer/counter register (TCR1) with a specified value in the timer/counter load register (TLR1).  This bit prevents the running of the timer/counter; hence, this should be cleared alongside setting Enable Timer/ Counter (ENT1) bit in TCSR1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENIT1": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Interrupt for Timer 1
+Enables the assertion of the interrupt signal for this timer. Has no effect on the interrupt flag (T1INT) in TCSR1.      0 - Disable interrupt signal      1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENT1": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Timer 1
+  0 - Disable timer (counter halts)
+  1 - Enable timer (counter runs)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"T1INT": {"access": "read-write",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Timer 1 Interrupt
+Indicates that the condition for an interrupt on this timer has occurred. If the timer mode is capture and the timer is enabled, this bit indicates a capture has occurred. If the mode is generate, this bit indicates the counter has rolled over. Must be cleared by writing a 1.
+Read:      0 - No interrupt has occurred      1 - Interrupt has occurred  Write:      0 - No change in state of T0INT      1 - Clear T1INT (clear to 0)
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"PWMA1": {"access": "read-write",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Pulse Width Modulation for Timer 1      0 - Disable pulse width modulation      1 - Enable pulse width modulation  PWM requires using Timer 0 and Timer 1 together as a pair. Timer 0 sets the period of the PWM output, and Timer 1 sets the high time for the PWM output. For PWM mode, MDT0 and MDT1 must be 0.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ENALL": {"access": "read-write",
+"bit_offset": "10",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable All Timers      0 - No effect on timers      1 - Enable all timers (counters run)  This bit is mirrored in all control/status registers and is used to enable all counters simultaneously. Writing a 1 to this bit sets ENALL, ENT0, and ENT1. Writing a 0 to this register clears ENALL but has no effect on ENT0 and ENT1. 
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101968,
+},
+"TLR1": {"description": "Timer 1 Load Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCLR1": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Load Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101972,
+},
+"TCR1": {"description": "Timer 1 Counter Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TCR1": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Timer/Counter Register
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1103101976,
+},
+},
+"mdm_1": {"UART_Receive": {"description": "JTAG UART Receive Data",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_RX": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 1094713344,
+},
+"UART_Transmit": {"description": "JTAG UART Transmit Data",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "8",
+"interface": "S_AXI",
+"fields": {"UART_TX": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713348,
+},
+"UART_Status": {"description": "JTAG UART Status Register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has valid data:
+  0 - Receive FIFO is empty.
+  1 - Receive FIFO has valid data.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full:
+  0 - Receive FIFO is not full.
+  1 - Receive FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty:
+  0 - Transmit FIFO is not empty.
+  1 - Transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full:
+  0 - Transmit FIFO is not full.
+  1 - Transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupt is enabled:
+  0 - Interrupt is disabled.
+  1 - Interrupt is enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713352,
+},
+"UART_Control": {"description": "JTAG UART Control Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"Reset_TX_FIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO:
+  0 - Do nothing.
+  1 - Clear the transmit FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Reset_RX_FIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO:
+  0 - Do nothing.
+  1 - Clear the receive FIFO.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Clear_EXT_BRK": {"access": "write-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Clear the EXT_BRK signal set by JTAG:
+  0 - Do nothing.
+  1 - Clear the signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Interrupt_Enabled": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates interrupt for the MDM JTAG UART:
+  0 - Disable interrupt interrupt.
+  1 - Enable interrupt signal.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713356,
+},
+"Debug_Status": {"description": "Debug Register Access Status Register",
+"address_offset": "0x10",
+"access": "read-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"LOCK": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates the access lock status:
+  0 - The lock is not acquired.
+  1 - The lock has been acquired by the JTAG interface.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713360,
+},
+"Debug_Control": {"description": "Debug Register Access Control Register",
+"address_offset": "0x10",
+"access": "write-only",
+"size": "20",
+"interface": "S_AXI",
+"fields": {"Bit_Size": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "9",
+"desc": "Number of bits in the accessed debug register - 1",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"MDM_Command": {"access": "write-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "8",
+"desc": "MDM command.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Access_MDM": {"access": "write-only",
+"bit_offset": "17",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Access MDM or MicroBlaze Debug register:
+  0 - MicroBlaze debug register access.
+  1 - MDM debug register access.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Access_Lock_Type": {"access": "read-only",
+"bit_offset": "18",
+"bit_range": "",
+"bit_width": "2",
+"desc": "Access lock type write:
+  0 - Release access lock to abort atomic sequence.
+  1 - Lock before first access and unlock after last.
+  2 - Lock before first access, otherwise keep lock.
+  3 - Force lock acquisition, even if aquired by JTAG.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713360,
+},
+"Debug_Data": {"description": "Debug Register Access Data Register",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"DBG_Data": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Read or write debug register data indicated by DBG_CTRL.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 1094713364,
+},
+"Debug_Lock": {"description": "Debug Register Access Locking Register",
+"address_offset": "0x18",
+"access": "write-only",
+"size": "16",
+"interface": "S_AXI",
+"fields": {"DBG_LOCK": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "16",
+"desc": "Unlock access to registers DBG_CTLR and DBG_DATA when writing 0xEBAB.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1094713368,
+},
+},
+"microblaze_0_axi_intc": {"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Status Register.
+For each bit up to number of periperhal interrupts:
+  R - Reads active interrupt signal.
+  W - No effect after MER HIE bit has been set, otherwise writes active interrupt signal.
+For remaining bits defined by number of software interrupts:
+  R - Reads software interrupt value.
+  W - Writes software interrupt value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616192,
+},
+"IPR": {"description": "Interrupt Pending Register",
+"address_offset": "0x4",
+"access": "read-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Pending Register.
+For each bit:
+  R - Reads logical AND of bits in ISR and IER.
+  W - No effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616196,
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Enable Register.
+For each bit:
+  R - Reads interrupt enable value.
+  W - Writes interrupt enable value.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616200,
+},
+"IAR": {"description": "Interrupt Acknowledge Register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Acknowledge Register.
+For each bit:
+  W - Acknowledge interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616204,
+},
+"SIE": {"description": "Set Interrupt Enables",
+"address_offset": "0x10",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Set Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 enables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616208,
+},
+"CIE": {"description": "Clear Interrupt Enables",
+"address_offset": "0x14",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Clear Interrupt Enables
+For each bit:
+  R - Reads active interrupt.
+  W - Writing 1 disables the interrupt, writing 0 has no effect.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616212,
+},
+"IVR": {"description": "Interrupt Vector Register",
+"address_offset": "0x18",
+"access": "read-only",
+"size": "5",
+"interface": "S_AXI",
+"fields": {"IVN": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "5",
+"desc": "Interrupt Vector Number.
+  R - Reads ordinal of highest priority, enabled, active interrupt.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616216,
+},
+"MER": {"description": "Master Enable Register",
+"address_offset": "0x1C",
+"access": "read-write",
+"size": "2",
+"interface": "S_AXI",
+"fields": {"ME": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master IRQ Enable.
+  0 - All interrupts disabled.
+  1 - All interrupts can be enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"HIE": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Hardware Interrupt Enable.
+  0 - HW interrupts disabled.
+  1 - HW interrupts enabled.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616220,
+},
+"IMR": {"description": "Interrupt Mode Register",
+"address_offset": "0x20",
+"access": "read-write",
+"size": "1",
+"interface": "S_AXI",
+"fields": {"INT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt Mode Register.
+For each bit:
+  R - Reads interrupt mode.
+  W - Sets interrupt mode, where 0 is normal mode and 1 is fast mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616224,
+},
+"IVAR[0]": {"description": "Interrupt Vector Address Register 0",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"IVA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Interrupt vector address of active interrupt 0 with highest priority.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1092616448,
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+"nexys4io_0": {},
+}]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.658
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.664
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Result: [null, {"axi_gpio_0_S_AXI": {"name": "axi_gpio_0",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_axi_intc_s_axi": {"name": "microblaze_0_axi_intc",
+"base": "0x41200000",
+"high": "0x4120FFFF",
+"size": "65536",
+"slaveintf": "s_axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"mdm_1_S_AXI": {"name": "mdm_1",
+"base": "0x41400000",
+"high": "0x41400FFF",
+"size": "4096",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_timer_0_S_AXI": {"name": "axi_timer_0",
+"base": "0x41C00000",
+"high": "0x41C0FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_Analyzer_0_S00_AXI": {"name": "PWM_Analyzer_0",
+"base": "0x44A00000",
+"high": "0x44A0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_Analyzer_1_S00_AXI": {"name": "PWM_Analyzer_1",
+"base": "0x44A10000",
+"high": "0x44A1FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"PWM_Analyzer_2_S00_AXI": {"name": "PWM_Analyzer_2",
+"base": "0x44A20000",
+"high": "0x44A2FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"nexys4io_0_S00_AXI": {"name": "nexys4io_0",
+"base": "0x44A30000",
+"high": "0x44A3FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x0000FFFF",
+"size": "65536",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.665
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.668
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.669
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.672
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Result: [null, {}]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.672
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.678
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.679
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.686
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.687
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.689
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.689
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.694
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.695
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.696
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.697
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_FREQ], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.698
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.711
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.712
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.713
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.725
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.727
+!MESSAGE XSCT Command: [version -server], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.728
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.729
+!MESSAGE XSCT Command: [version], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.730
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.731
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.745
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.745
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.756
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.758
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.761
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.762
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.773
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.773
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.777
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.777
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.788
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.789
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.792
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.792
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.803
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.804
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.807
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.807
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.818
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.818
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.829
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.830
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.834
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.834
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.837
+!MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa microblaze_0], Result: [null, {"Clk": "100000000",
+"Dbg_Clk": "",
+}]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.853
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.857
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.858
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.868
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:55.869
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:56.006
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:56.007
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.277
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.302
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.317
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.317
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.347
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Result: [null, nexysa7fpga]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.348
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.349
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.351
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.361
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.363
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.366
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:14:58.367
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.379
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.380
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.396
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.396
+!MESSAGE XSCT Command: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.520
+!MESSAGE XSCT command with result: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.585
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.595
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.596
+!MESSAGE XSCT Command: [con], Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:15:01.603
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-16 16:15:01.606
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:05.421
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:05.423
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:05.424
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:05.426
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-16 16:16:05.427
+!MESSAGE Generating MD5 hash for file: C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\nexysa7fpga\export\nexysa7fpga\sw\nexysa7fpga\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:05.428
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:05.429
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-2: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:25.575
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:25.577
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:25.577
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:25.580
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-16 16:16:25.580
+!MESSAGE Generating MD5 hash for file: C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\nexysa7fpga\export\nexysa7fpga\sw\nexysa7fpga\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:25.582
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:25.583
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-1: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:31.037
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-129
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:31.041
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-129
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.053
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.058
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.059
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.066
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA (closed)]. Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.066
+!MESSAGE XSCT Command: [version -server], Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.084
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.085
+!MESSAGE XSCT Command: [version], Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.086
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.087
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.091
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA (closed)]. Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:32.091
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA (closed)" && level==1}], Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:35.101
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA (closed)" && level==1}], Result: [null, ]. Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:38.107
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA (closed)" && level==1}], Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:41.119
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA (closed)" && level==1}], Result: [null, ]. Thread: Worker-4: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.749
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.751
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.751
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.755
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.755
+!MESSAGE XSCT Command: [version -server], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.757
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.757
+!MESSAGE XSCT Command: [version], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.757
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.758
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.761
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.762
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.773
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.773
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.777
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.777
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.789
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.789
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.792
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.792
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.803
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.803
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.807
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.807
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.819
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.819
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.823
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.823
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.834
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.834
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.845
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.846
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.847
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.864
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.868
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.868
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.879
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.880
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.901
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:43.901
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.089
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.108
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.121
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.122
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.331
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Result: [null, nexysa7fpga_0]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.332
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.333
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.334
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.344
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.344
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.347
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:46.347
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.355
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.355
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.379
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.379
+!MESSAGE XSCT Command: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.505
+!MESSAGE XSCT command with result: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.576
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.594
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.600
+!MESSAGE XSCT Command: [con], Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:16:49.610
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-16 16:16:49.613
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:40.245
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:40.252
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss ], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:40.252
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:40.255
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "8.0",
+}]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-16 16:18:40.256
+!MESSAGE Generating MD5 hash for file: C:\ECE544-EmbeddedSystemsFPGA\ece544w25_proj1\ECE544-Project1\nexysa7fpga\export\nexysa7fpga\sw\nexysa7fpga\standalone_microblaze_0\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:40.256
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:40.259
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/sw/nexysa7fpga/standalone_microblaze_0/system.mss], Result: [null, ]. Thread: Worker-0: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:51.628
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-186
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:51.648
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-186
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.652
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.656
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#3]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.657
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.663
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.663
+!MESSAGE XSCT Command: [version -server], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.665
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.665
+!MESSAGE XSCT Command: [version], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.665
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.666
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.682
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.683
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.693
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.693
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.697
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.697
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.708
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.708
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.711
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.712
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.724
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.724
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.728
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.732
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.743
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.743
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.748
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.748
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.758
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.759
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.770
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level == 0}], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.770
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.777
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.790
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.795
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Nexys A7 -100T 210292BB2FBAA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.795
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.806
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.807
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.829
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys A7 -100T 210292BB2FBAA" && level==0 && jtag_device_ctx=="jsn-Nexys A7 -100T-210292BB2FBAA-13631093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:52.829
+!MESSAGE XSCT Command: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.022
+!MESSAGE XSCT command with result: [fpga -file C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/_ide/bitstream/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.047
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.059
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.059
+!MESSAGE XSCT Command: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.268
+!MESSAGE XSCT command with result: [loadhw -hw C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/nexysa7fpga/export/nexysa7fpga/hw/nexysa7fpga.xsa -regs], Result: [null, nexysa7fpga_1]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.269
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.270
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.271
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.281
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.282
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.285
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:55.285
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.299
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.299
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.313
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.313
+!MESSAGE XSCT Command: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.434
+!MESSAGE XSCT command with result: [dow C:/ECE544-EmbeddedSystemsFPGA/ece544w25_proj1/ECE544-Project1/Test_Program_3/Debug/Test_Program_3.elf], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.516
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.530
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.531
+!MESSAGE XSCT Command: [con], Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:18:58.539
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-6: Launching Debugger_Test_Program_3-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2025-02-16 16:18:58.540
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '3'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:24:45.160
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-233
+
+!ENTRY com.xilinx.sdk.utils 0 0 2025-02-16 16:24:45.165
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-233
